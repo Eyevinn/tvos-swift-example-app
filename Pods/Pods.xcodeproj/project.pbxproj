@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AE6DBF599C5CD6286825421E4E715C0 /* Pods-EyevinnTV-EyevinnTVUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C947D5C268E717A8200D261EB583F7 /* Pods-EyevinnTV-EyevinnTVUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BDDE5A3D38AF5F9C9FB1FB24EA6B7A1 /* SWXMLHash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F710317A38AF0A218C0F0F161E886EB /* SWXMLHash-dummy.m */; };
+		3988ED555CC938BFF94324F5FB12FA5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE704B3F7EFE27740FC25A5CE60A6651 /* Foundation.framework */; };
+		44322A574E2EF1BD2ABF01E98515C29F /* Pods-EyevinnTV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C916E50BE0BF5368E41A8B159B2E6FCE /* Pods-EyevinnTV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		627228CFC7C8006A8632B4D5A4FC1FD3 /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B2F170D8BDE52B4523A4461E7AE58 /* SWXMLHash.swift */; };
+		704AE4E9E9333F68C8AB95D1281AFD2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE704B3F7EFE27740FC25A5CE60A6651 /* Foundation.framework */; };
+		7452001E2AC4BC4E604E46E6F7EFFDB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE704B3F7EFE27740FC25A5CE60A6651 /* Foundation.framework */; };
+		88B2646F91AD91D75F6CE4FBBBFA0161 /* Pods-EyevinnTVTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E55B97DA3B814DF0DFC80EB3FFF1F15D /* Pods-EyevinnTVTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1F48D44D464E2AE9F8E1CB20F20F183 /* Pods-EyevinnTVTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EA63C0EA8FAEE1D3E152AFA4119328 /* Pods-EyevinnTVTests-dummy.m */; };
+		C3D07A33CB47D0A91A2C94D04F6777C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE704B3F7EFE27740FC25A5CE60A6651 /* Foundation.framework */; };
+		E31C332CC04B94767008610A9E488E6F /* SWXMLHash-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 233B462C47DFEAE43B6981AD57B7D641 /* SWXMLHash-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EADE202819B61E123D5C764CDA4F56D6 /* Pods-EyevinnTV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9196C6FD2DF5D80744DE1B367849C79 /* Pods-EyevinnTV-dummy.m */; };
+		EC4E99392A958C69AAD2371B29DE3D90 /* XMLIndexer+XMLIndexerDeserializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CE164FE792F4F73C59B977972DC136 /* XMLIndexer+XMLIndexerDeserializable.swift */; };
+		EF44B86DC1C6DBCBABB75640BE32AD72 /* shim.swift in Sources */ = {isa = PBXBuildFile; fileRef = B733D2C44ADC7967E21F58DFB4C43579 /* shim.swift */; };
+		F58BDB3F5FBA32A8A0265635FA9CBD92 /* Pods-EyevinnTV-EyevinnTVUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF51CCFBD697B2090D10D0F2E491D2 /* Pods-EyevinnTV-EyevinnTVUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2ADBC007DB70A1199E5AD8B73F6841E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63678F9A594800CBC7006B45EAB7886B;
+			remoteInfo = SWXMLHash;
+		};
+		B621C1A88623B56A0269810182CC7F1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63678F9A594800CBC7006B45EAB7886B;
+			remoteInfo = SWXMLHash;
+		};
+		EB0A2ED2769FD2C474311C4772970C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12EA7681DEBDB3801F8D0FF6749AB0BA;
+			remoteInfo = "Pods-EyevinnTV";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02EA63C0EA8FAEE1D3E152AFA4119328 /* Pods-EyevinnTVTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EyevinnTVTests-dummy.m"; sourceTree = "<group>"; };
+		071CAF490C3B9B0D95DFA91465F984CD /* SWXMLHash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-prefix.pch"; sourceTree = "<group>"; };
+		11F613580FAA7CE8A93921061E2D8453 /* Pods-EyevinnTV-EyevinnTVUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EyevinnTV-EyevinnTVUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1ADF51CCFBD697B2090D10D0F2E491D2 /* Pods-EyevinnTV-EyevinnTVUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EyevinnTV-EyevinnTVUITests-dummy.m"; sourceTree = "<group>"; };
+		1E8B2F170D8BDE52B4523A4461E7AE58 /* SWXMLHash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SWXMLHash.swift; path = Source/SWXMLHash.swift; sourceTree = "<group>"; };
+		233B462C47DFEAE43B6981AD57B7D641 /* SWXMLHash-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-umbrella.h"; sourceTree = "<group>"; };
+		2581C9C8663F38E6DC6C6D5BA01BB0DD /* Pods-EyevinnTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EyevinnTVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		28D596C21AB77B57935CE6A29C4A2B0D /* Pods-EyevinnTVTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EyevinnTVTests-Info.plist"; sourceTree = "<group>"; };
+		2F710317A38AF0A218C0F0F161E886EB /* SWXMLHash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWXMLHash-dummy.m"; sourceTree = "<group>"; };
+		312AD7DD3DCFC2119AE827CB392FB10A /* Pods-EyevinnTV-EyevinnTVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EyevinnTV-EyevinnTVUITests.release.xcconfig"; sourceTree = "<group>"; };
+		37BE54C0AEE95BCBF1051435DF203E52 /* Pods-EyevinnTV-EyevinnTVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EyevinnTV-EyevinnTVUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B9CF0D792A65C572F99F0C74FC206FD /* Pods-EyevinnTV-EyevinnTVUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EyevinnTV-EyevinnTVUITests-frameworks.sh"; sourceTree = "<group>"; };
+		4AC67A66D3C96CF6AD6796FD9C0CB7FD /* SWXMLHash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWXMLHash.release.xcconfig; sourceTree = "<group>"; };
+		5D59CEC622BC39647EF889453BE7427F /* SWXMLHash.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SWXMLHash.modulemap; sourceTree = "<group>"; };
+		6C7EB629870D869D027781C072FC64C8 /* Pods-EyevinnTV */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-EyevinnTV"; path = Pods_EyevinnTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7076A6C83796B07AE2D792E9074366CB /* Pods-EyevinnTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EyevinnTV.release.xcconfig"; sourceTree = "<group>"; };
+		800DC2A13A6304E3BA2FC30F3B61F2E5 /* Pods-EyevinnTV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EyevinnTV.modulemap"; sourceTree = "<group>"; };
+		80DDB98F54D90F17DAB9179E68C7FB92 /* Pods-EyevinnTV-EyevinnTVUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EyevinnTV-EyevinnTVUITests.modulemap"; sourceTree = "<group>"; };
+		89C947D5C268E717A8200D261EB583F7 /* Pods-EyevinnTV-EyevinnTVUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EyevinnTV-EyevinnTVUITests-umbrella.h"; sourceTree = "<group>"; };
+		90D0E4D86FBED3175B9E25332B512CFD /* Pods-EyevinnTV-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EyevinnTV-Info.plist"; sourceTree = "<group>"; };
+		9150A2843EA75C602EC4E7C6C9EF60BE /* Pods-EyevinnTV-EyevinnTVUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EyevinnTV-EyevinnTVUITests-Info.plist"; sourceTree = "<group>"; };
+		97D014AD6344E543FEDB1FD1F8F2BFEC /* SWXMLHash */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SWXMLHash; path = SWXMLHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97EB24CE353C5F6549F53FDDC68A775C /* Pods-EyevinnTV-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EyevinnTV-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9807311068BD787F6365CC51506FDC8F /* Pods-EyevinnTV-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EyevinnTV-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0B215479D251261D66F026326232FF7 /* Pods-EyevinnTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EyevinnTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		A3BF5FB9C0DC50A468656E467ED233D6 /* Pods-EyevinnTVTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EyevinnTVTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AE704B3F7EFE27740FC25A5CE60A6651 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B0CE164FE792F4F73C59B977972DC136 /* XMLIndexer+XMLIndexerDeserializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XMLIndexer+XMLIndexerDeserializable.swift"; path = "Source/XMLIndexer+XMLIndexerDeserializable.swift"; sourceTree = "<group>"; };
+		B733D2C44ADC7967E21F58DFB4C43579 /* shim.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = shim.swift; path = Source/shim.swift; sourceTree = "<group>"; };
+		B9196C6FD2DF5D80744DE1B367849C79 /* Pods-EyevinnTV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EyevinnTV-dummy.m"; sourceTree = "<group>"; };
+		BB1635DFC402E30490A8199003806244 /* Pods-EyevinnTV-EyevinnTVUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EyevinnTV-EyevinnTVUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BCA7FB05518B7E49E008814451BCE87D /* SWXMLHash-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SWXMLHash-Info.plist"; sourceTree = "<group>"; };
+		BD8B69AAA4CF8C896FD05E3C9287A2FB /* Pods-EyevinnTVTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EyevinnTVTests.modulemap"; sourceTree = "<group>"; };
+		C916E50BE0BF5368E41A8B159B2E6FCE /* Pods-EyevinnTV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EyevinnTV-umbrella.h"; sourceTree = "<group>"; };
+		CC09F9E9F8F13FB238DC02C2A268A793 /* Pods-EyevinnTV-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EyevinnTV-frameworks.sh"; sourceTree = "<group>"; };
+		CCFEDDD2A70CFE072D90D7E51036A6BC /* Pods-EyevinnTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EyevinnTV.debug.xcconfig"; sourceTree = "<group>"; };
+		DFC165FD56207AC6A318E85872C80C1B /* Pods-EyevinnTV-EyevinnTVUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-EyevinnTV-EyevinnTVUITests"; path = Pods_EyevinnTV_EyevinnTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E55B97DA3B814DF0DFC80EB3FFF1F15D /* Pods-EyevinnTVTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EyevinnTVTests-umbrella.h"; sourceTree = "<group>"; };
+		F4EC83BC173D2A36A111FB382E6A1C4B /* SWXMLHash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWXMLHash.debug.xcconfig; sourceTree = "<group>"; };
+		F61B58AEAF4DFB23E402115DAD98455A /* Pods-EyevinnTVTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EyevinnTVTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FBE574A481F825917A6A8172D0D06F7D /* Pods-EyevinnTVTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-EyevinnTVTests"; path = Pods_EyevinnTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BF73242B24DA6E9510462E046E927C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7452001E2AC4BC4E604E46E6F7EFFDB4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53E0DA29D7D7C463F35DD6DACABDCAC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3988ED555CC938BFF94324F5FB12FA5B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2FEA7A86AE02C222B841B8F8F688BB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D07A33CB47D0A91A2C94D04F6777C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB51ADD42D575F6A5913141ED8D0A64A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				704AE4E9E9333F68C8AB95D1281AFD2F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F9FCB3618DC551B524D67B669081319 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCADEF5968BA4BD0936606315FB57A49 /* tvOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21FFAEB3824076235DB40BAB4E8CA867 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				327796D1307E15D5CF841D4E393C456B /* SWXMLHash */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		327796D1307E15D5CF841D4E393C456B /* SWXMLHash */ = {
+			isa = PBXGroup;
+			children = (
+				B733D2C44ADC7967E21F58DFB4C43579 /* shim.swift */,
+				1E8B2F170D8BDE52B4523A4461E7AE58 /* SWXMLHash.swift */,
+				B0CE164FE792F4F73C59B977972DC136 /* XMLIndexer+XMLIndexerDeserializable.swift */,
+				F6455E5C2A4C1856ED9F92D51AA2DD01 /* Support Files */,
+			);
+			name = SWXMLHash;
+			path = SWXMLHash;
+			sourceTree = "<group>";
+		};
+		90C1995234D0D1C4B6E29C558753D6EE /* Pods-EyevinnTV-EyevinnTVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				80DDB98F54D90F17DAB9179E68C7FB92 /* Pods-EyevinnTV-EyevinnTVUITests.modulemap */,
+				11F613580FAA7CE8A93921061E2D8453 /* Pods-EyevinnTV-EyevinnTVUITests-acknowledgements.markdown */,
+				BB1635DFC402E30490A8199003806244 /* Pods-EyevinnTV-EyevinnTVUITests-acknowledgements.plist */,
+				1ADF51CCFBD697B2090D10D0F2E491D2 /* Pods-EyevinnTV-EyevinnTVUITests-dummy.m */,
+				3B9CF0D792A65C572F99F0C74FC206FD /* Pods-EyevinnTV-EyevinnTVUITests-frameworks.sh */,
+				9150A2843EA75C602EC4E7C6C9EF60BE /* Pods-EyevinnTV-EyevinnTVUITests-Info.plist */,
+				89C947D5C268E717A8200D261EB583F7 /* Pods-EyevinnTV-EyevinnTVUITests-umbrella.h */,
+				37BE54C0AEE95BCBF1051435DF203E52 /* Pods-EyevinnTV-EyevinnTVUITests.debug.xcconfig */,
+				312AD7DD3DCFC2119AE827CB392FB10A /* Pods-EyevinnTV-EyevinnTVUITests.release.xcconfig */,
+			);
+			name = "Pods-EyevinnTV-EyevinnTVUITests";
+			path = "Target Support Files/Pods-EyevinnTV-EyevinnTVUITests";
+			sourceTree = "<group>";
+		};
+		A11BB9E599B89C42264074D23DD64F38 /* Pods-EyevinnTV */ = {
+			isa = PBXGroup;
+			children = (
+				800DC2A13A6304E3BA2FC30F3B61F2E5 /* Pods-EyevinnTV.modulemap */,
+				97EB24CE353C5F6549F53FDDC68A775C /* Pods-EyevinnTV-acknowledgements.markdown */,
+				9807311068BD787F6365CC51506FDC8F /* Pods-EyevinnTV-acknowledgements.plist */,
+				B9196C6FD2DF5D80744DE1B367849C79 /* Pods-EyevinnTV-dummy.m */,
+				CC09F9E9F8F13FB238DC02C2A268A793 /* Pods-EyevinnTV-frameworks.sh */,
+				90D0E4D86FBED3175B9E25332B512CFD /* Pods-EyevinnTV-Info.plist */,
+				C916E50BE0BF5368E41A8B159B2E6FCE /* Pods-EyevinnTV-umbrella.h */,
+				CCFEDDD2A70CFE072D90D7E51036A6BC /* Pods-EyevinnTV.debug.xcconfig */,
+				7076A6C83796B07AE2D792E9074366CB /* Pods-EyevinnTV.release.xcconfig */,
+			);
+			name = "Pods-EyevinnTV";
+			path = "Target Support Files/Pods-EyevinnTV";
+			sourceTree = "<group>";
+		};
+		AF28A9EFBF64E2F36EC5717A94F71FA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C7EB629870D869D027781C072FC64C8 /* Pods-EyevinnTV */,
+				DFC165FD56207AC6A318E85872C80C1B /* Pods-EyevinnTV-EyevinnTVUITests */,
+				FBE574A481F825917A6A8172D0D06F7D /* Pods-EyevinnTVTests */,
+				97D014AD6344E543FEDB1FD1F8F2BFEC /* SWXMLHash */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7950EBEE0806204DFAD58428FCA8621 /* Pods-EyevinnTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD8B69AAA4CF8C896FD05E3C9287A2FB /* Pods-EyevinnTVTests.modulemap */,
+				A3BF5FB9C0DC50A468656E467ED233D6 /* Pods-EyevinnTVTests-acknowledgements.markdown */,
+				F61B58AEAF4DFB23E402115DAD98455A /* Pods-EyevinnTVTests-acknowledgements.plist */,
+				02EA63C0EA8FAEE1D3E152AFA4119328 /* Pods-EyevinnTVTests-dummy.m */,
+				28D596C21AB77B57935CE6A29C4A2B0D /* Pods-EyevinnTVTests-Info.plist */,
+				E55B97DA3B814DF0DFC80EB3FFF1F15D /* Pods-EyevinnTVTests-umbrella.h */,
+				2581C9C8663F38E6DC6C6D5BA01BB0DD /* Pods-EyevinnTVTests.debug.xcconfig */,
+				A0B215479D251261D66F026326232FF7 /* Pods-EyevinnTVTests.release.xcconfig */,
+			);
+			name = "Pods-EyevinnTVTests";
+			path = "Target Support Files/Pods-EyevinnTVTests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1F9FCB3618DC551B524D67B669081319 /* Frameworks */,
+				21FFAEB3824076235DB40BAB4E8CA867 /* Pods */,
+				AF28A9EFBF64E2F36EC5717A94F71FA4 /* Products */,
+				F588B54A4FA43C580D0BFB88504C172D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DCADEF5968BA4BD0936606315FB57A49 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				AE704B3F7EFE27740FC25A5CE60A6651 /* Foundation.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+		F588B54A4FA43C580D0BFB88504C172D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A11BB9E599B89C42264074D23DD64F38 /* Pods-EyevinnTV */,
+				90C1995234D0D1C4B6E29C558753D6EE /* Pods-EyevinnTV-EyevinnTVUITests */,
+				B7950EBEE0806204DFAD58428FCA8621 /* Pods-EyevinnTVTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F6455E5C2A4C1856ED9F92D51AA2DD01 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D59CEC622BC39647EF889453BE7427F /* SWXMLHash.modulemap */,
+				2F710317A38AF0A218C0F0F161E886EB /* SWXMLHash-dummy.m */,
+				BCA7FB05518B7E49E008814451BCE87D /* SWXMLHash-Info.plist */,
+				071CAF490C3B9B0D95DFA91465F984CD /* SWXMLHash-prefix.pch */,
+				233B462C47DFEAE43B6981AD57B7D641 /* SWXMLHash-umbrella.h */,
+				F4EC83BC173D2A36A111FB382E6A1C4B /* SWXMLHash.debug.xcconfig */,
+				4AC67A66D3C96CF6AD6796FD9C0CB7FD /* SWXMLHash.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SWXMLHash";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		65B7D262821558A54B0EC7567A4996A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B2646F91AD91D75F6CE4FBBBFA0161 /* Pods-EyevinnTVTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5DFA30DD372BB198D1A232A9E1BF9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44322A574E2EF1BD2ABF01E98515C29F /* Pods-EyevinnTV-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D18D09C01B8A29454CF6493230C63322 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE6DBF599C5CD6286825421E4E715C0 /* Pods-EyevinnTV-EyevinnTVUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E59F606BD6BCB581280F38CF4D96CFA4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E31C332CC04B94767008610A9E488E6F /* SWXMLHash-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		12EA7681DEBDB3801F8D0FF6749AB0BA /* Pods-EyevinnTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 420B024569B30A7A35450042FD57D906 /* Build configuration list for PBXNativeTarget "Pods-EyevinnTV" */;
+			buildPhases = (
+				BE5DFA30DD372BB198D1A232A9E1BF9F /* Headers */,
+				75CD7781D65A243562553C83BA0EF7E2 /* Sources */,
+				DB51ADD42D575F6A5913141ED8D0A64A /* Frameworks */,
+				025FB06B2AC6FEBA26B29B23D8C1E89D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D52173B6DCBF51B489D67EE229D61B73 /* PBXTargetDependency */,
+			);
+			name = "Pods-EyevinnTV";
+			productName = Pods_EyevinnTV;
+			productReference = 6C7EB629870D869D027781C072FC64C8 /* Pods-EyevinnTV */;
+			productType = "com.apple.product-type.framework";
+		};
+		33AEE8A90A31771244442C24B71FE259 /* Pods-EyevinnTV-EyevinnTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D12277901D1D01EB82209C8FF1626E2D /* Build configuration list for PBXNativeTarget "Pods-EyevinnTV-EyevinnTVUITests" */;
+			buildPhases = (
+				D18D09C01B8A29454CF6493230C63322 /* Headers */,
+				C6B7C65858D4F960E0D7CCFD4B3521D8 /* Sources */,
+				3BF73242B24DA6E9510462E046E927C4 /* Frameworks */,
+				F9F605C2EA16C21C5A21230E0C02C3B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				240FE11EF60FA0B1DF1A4E5ECFD4DCB0 /* PBXTargetDependency */,
+			);
+			name = "Pods-EyevinnTV-EyevinnTVUITests";
+			productName = Pods_EyevinnTV_EyevinnTVUITests;
+			productReference = DFC165FD56207AC6A318E85872C80C1B /* Pods-EyevinnTV-EyevinnTVUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		5F80064738666ACBA0108764604CA1C3 /* Pods-EyevinnTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF9E54AB484E34C7424721E124960E46 /* Build configuration list for PBXNativeTarget "Pods-EyevinnTVTests" */;
+			buildPhases = (
+				65B7D262821558A54B0EC7567A4996A4 /* Headers */,
+				DA483B1AA6F085BC29B3EA1F529EEE74 /* Sources */,
+				53E0DA29D7D7C463F35DD6DACABDCAC2 /* Frameworks */,
+				17ED1524136B4A7EA59290CFFBC64E4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09492828CE3164445B4028503691B09D /* PBXTargetDependency */,
+			);
+			name = "Pods-EyevinnTVTests";
+			productName = Pods_EyevinnTVTests;
+			productReference = FBE574A481F825917A6A8172D0D06F7D /* Pods-EyevinnTVTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		63678F9A594800CBC7006B45EAB7886B /* SWXMLHash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9F00944C060FC5CE5C770F4B013688E /* Build configuration list for PBXNativeTarget "SWXMLHash" */;
+			buildPhases = (
+				E59F606BD6BCB581280F38CF4D96CFA4 /* Headers */,
+				AE92592474409C4D500B7F029F9B8797 /* Sources */,
+				C2FEA7A86AE02C222B841B8F8F688BB4 /* Frameworks */,
+				D6E4ABD5CF13A542E7712425A76556B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SWXMLHash;
+			productName = SWXMLHash;
+			productReference = 97D014AD6344E543FEDB1FD1F8F2BFEC /* SWXMLHash */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = AF28A9EFBF64E2F36EC5717A94F71FA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12EA7681DEBDB3801F8D0FF6749AB0BA /* Pods-EyevinnTV */,
+				33AEE8A90A31771244442C24B71FE259 /* Pods-EyevinnTV-EyevinnTVUITests */,
+				5F80064738666ACBA0108764604CA1C3 /* Pods-EyevinnTVTests */,
+				63678F9A594800CBC7006B45EAB7886B /* SWXMLHash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		025FB06B2AC6FEBA26B29B23D8C1E89D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17ED1524136B4A7EA59290CFFBC64E4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6E4ABD5CF13A542E7712425A76556B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9F605C2EA16C21C5A21230E0C02C3B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75CD7781D65A243562553C83BA0EF7E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EADE202819B61E123D5C764CDA4F56D6 /* Pods-EyevinnTV-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE92592474409C4D500B7F029F9B8797 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF44B86DC1C6DBCBABB75640BE32AD72 /* shim.swift in Sources */,
+				627228CFC7C8006A8632B4D5A4FC1FD3 /* SWXMLHash.swift in Sources */,
+				2BDDE5A3D38AF5F9C9FB1FB24EA6B7A1 /* SWXMLHash-dummy.m in Sources */,
+				EC4E99392A958C69AAD2371B29DE3D90 /* XMLIndexer+XMLIndexerDeserializable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6B7C65858D4F960E0D7CCFD4B3521D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58BDB3F5FBA32A8A0265635FA9CBD92 /* Pods-EyevinnTV-EyevinnTVUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA483B1AA6F085BC29B3EA1F529EEE74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F48D44D464E2AE9F8E1CB20F20F183 /* Pods-EyevinnTVTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09492828CE3164445B4028503691B09D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EyevinnTV";
+			target = 12EA7681DEBDB3801F8D0FF6749AB0BA /* Pods-EyevinnTV */;
+			targetProxy = EB0A2ED2769FD2C474311C4772970C07 /* PBXContainerItemProxy */;
+		};
+		240FE11EF60FA0B1DF1A4E5ECFD4DCB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SWXMLHash;
+			target = 63678F9A594800CBC7006B45EAB7886B /* SWXMLHash */;
+			targetProxy = 2ADBC007DB70A1199E5AD8B73F6841E9 /* PBXContainerItemProxy */;
+		};
+		D52173B6DCBF51B489D67EE229D61B73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SWXMLHash;
+			target = 63678F9A594800CBC7006B45EAB7886B /* SWXMLHash */;
+			targetProxy = B621C1A88623B56A0269810182CC7F1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6484B8B8E03358DE8EF187EF8C4CE5AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0B215479D251261D66F026326232FF7 /* Pods-EyevinnTVTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EyevinnTVTests/Pods-EyevinnTVTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EyevinnTVTests/Pods-EyevinnTVTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		862675B45D5C2548201D0832905536A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4EC83BC173D2A36A111FB382E6A1C4B /* SWXMLHash.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SWXMLHash/SWXMLHash-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SWXMLHash/SWXMLHash-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SWXMLHash/SWXMLHash.modulemap";
+				PRODUCT_MODULE_NAME = SWXMLHash;
+				PRODUCT_NAME = SWXMLHash;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B19C8C18B41654FF157BCA223701420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37BE54C0AEE95BCBF1051435DF203E52 /* Pods-EyevinnTV-EyevinnTVUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EyevinnTV-EyevinnTVUITests/Pods-EyevinnTV-EyevinnTVUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EyevinnTV-EyevinnTVUITests/Pods-EyevinnTV-EyevinnTVUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		94C5473DE5CF47D91F7742DACA030387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+			};
+			name = Release;
+		};
+		94D7B61E08D9AB128A3AF7D4E903D8BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AC67A66D3C96CF6AD6796FD9C0CB7FD /* SWXMLHash.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SWXMLHash/SWXMLHash-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SWXMLHash/SWXMLHash-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SWXMLHash/SWXMLHash.modulemap";
+				PRODUCT_MODULE_NAME = SWXMLHash;
+				PRODUCT_NAME = SWXMLHash;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		990B5C9275447C6C7C5C8AF2081A3E18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7076A6C83796B07AE2D792E9074366CB /* Pods-EyevinnTV.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EyevinnTV/Pods-EyevinnTV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EyevinnTV/Pods-EyevinnTV.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CADA8D97A1CA4AC84771405608619062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCFEDDD2A70CFE072D90D7E51036A6BC /* Pods-EyevinnTV.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EyevinnTV/Pods-EyevinnTV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EyevinnTV/Pods-EyevinnTV.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D70824A32B690239D79E1803B2FCE448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+			};
+			name = Debug;
+		};
+		EE2FD8BA84E8D7671CD4DAA6F29AAA91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 312AD7DD3DCFC2119AE827CB392FB10A /* Pods-EyevinnTV-EyevinnTVUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EyevinnTV-EyevinnTVUITests/Pods-EyevinnTV-EyevinnTVUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EyevinnTV-EyevinnTVUITests/Pods-EyevinnTV-EyevinnTVUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F350741DE739538D04A0FDFD1151AE31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2581C9C8663F38E6DC6C6D5BA01BB0DD /* Pods-EyevinnTVTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EyevinnTVTests/Pods-EyevinnTVTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EyevinnTVTests/Pods-EyevinnTVTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		420B024569B30A7A35450042FD57D906 /* Build configuration list for PBXNativeTarget "Pods-EyevinnTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CADA8D97A1CA4AC84771405608619062 /* Debug */,
+				990B5C9275447C6C7C5C8AF2081A3E18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D70824A32B690239D79E1803B2FCE448 /* Debug */,
+				94C5473DE5CF47D91F7742DACA030387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D12277901D1D01EB82209C8FF1626E2D /* Build configuration list for PBXNativeTarget "Pods-EyevinnTV-EyevinnTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B19C8C18B41654FF157BCA223701420 /* Debug */,
+				EE2FD8BA84E8D7671CD4DAA6F29AAA91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF9E54AB484E34C7424721E124960E46 /* Build configuration list for PBXNativeTarget "Pods-EyevinnTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F350741DE739538D04A0FDFD1151AE31 /* Debug */,
+				6484B8B8E03358DE8EF187EF8C4CE5AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9F00944C060FC5CE5C770F4B013688E /* Build configuration list for PBXNativeTarget "SWXMLHash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862675B45D5C2548201D0832905536A5 /* Debug */,
+				94D7B61E08D9AB128A3AF7D4E903D8BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
