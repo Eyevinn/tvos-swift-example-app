@@ -118,9 +118,9 @@
 				0375B7C228211D8000C86A39 /* EyevinnTVApp.swift */,
 				0375B7C428211D8000C86A39 /* ContentView.swift */,
 				0375B7C628211D8100C86A39 /* Assets.xcassets */,
-				0375B7C828211D8100C86A39 /* Preview Content */,
 				0375B7EC282128FC00C86A39 /* VideoItemObject.swift */,
 				0375B7F0282157F600C86A39 /* VideoView.swift */,
+				0375B7C828211D8100C86A39 /* Preview Content */,
 			);
 			path = EyevinnTV;
 			sourceTree = "<group>";
@@ -574,6 +574,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"EyevinnTV/Preview Content\"";
+				DEVELOPMENT_TEAM = RK9YNC9TPH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -600,6 +601,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"EyevinnTV/Preview Content\"";
+				DEVELOPMENT_TEAM = RK9YNC9TPH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

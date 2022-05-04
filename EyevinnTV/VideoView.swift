@@ -14,14 +14,7 @@ struct VideoView: View {
     
     var body: some View {
         HStack {
-            VideoPlayer(player: player, videoOverlay: {
-                //Doesn't toggle correctly
-                if player?.timeControlStatus != AVPlayer.TimeControlStatus.paused {
-                    Spacer()
-                    Text(innerURLObject.currentVideoTitle)
-                }
-                
-            })
+            VideoPlayer(player: player)
             .onAppear() {
                 guard let url = URL(string: innerURLObject.currentVideoURL) else {
                     return
@@ -29,10 +22,8 @@ struct VideoView: View {
                 let player = AVPlayer(url: url)
                 self.player = player
                 player.play()
-                print(player.timeControlStatus)
             }
             .frame(width: 1920, height: 1080, alignment: .bottomLeading)
-            
         }
         .onExitCommand() {
             innerURLObject.currentVideoURL = ""

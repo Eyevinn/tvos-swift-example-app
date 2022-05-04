@@ -21,40 +21,70 @@ struct ContentView: View {
         NavigationView {
             if outerVideoURLObject.currentVideoURL == "" {
                 VStack{
-                    Text("Select a video to play it")
-                        .font(.system(size: 50))
-                        .bold()
+                    Image("eyevinn-logo")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height: 200, alignment: .center)
+                    
                     ScrollView(.horizontal) {
                         HStack {
                             ForEach(videoItems) { item in
                                 VStack {
-                                    Image(systemName: "play.tv")
-                                        .font(.system(size: 100))
-                                    Text("\(item.title)")
-                                        .bold()
-                                    Button("Play") {
+                                    Button {
                                         outerVideoURLObject.currentVideoURL = item.videoURL
                                         outerVideoURLObject.currentVideoTitle = item.title
-                                        print(item.videoURL)
-                                    }
+                                        print(item.videoURL) } label: {
+                                            VStack {
+                                                Image(systemName: "play.tv")
+                                                    .font(.system(size: 100))
+                                                Text("\(item.title)")
+                                                    .bold()
+                                            }
+                                            .frame(width: 550, height: 250)
+                                        }
                                 }
-                                .id(item.id)
                             }
-                            //                            ScrollViewReader { value in
-                            //                                Button {
-                            //                                    value.scrollTo(videoItems[0].id)
-                            //                                } label: {
-                            //                                Image(systemName:"arrowshape.turn.up.backward")
-                            //                                }
-                            //                            }
                         }
                         .padding()
-                        
-                        
                     }
+                    
+                    ScrollView(.horizontal) {
+                        HStack {
+                            VStack {
+                                Button {
+                                    outerVideoURLObject.currentVideoURL = "https://d2fz24s2fts31b.cloudfront.net/out/v1/6484d7c664924b77893f9b4f63080e5d/manifest.m3u8"
+                                    outerVideoURLObject.currentVideoTitle = "HLS LIVE"
+                                } label: {
+                                    VStack {
+                                        Image(systemName: "play.tv")
+                                            .font(.system(size: 100))
+                                        Text("HLS LIVE")
+                                            .bold()
+                                    }
+                                    .frame(width: 550, height: 250)
+                                }
+                            }
+                            
+                            VStack {
+                                Button {
+                                    outerVideoURLObject.currentVideoURL = "https://edfaeed9c7154a20828a30a26878ade0.mediatailor.eu-west-1.amazonaws.com/v1/master/1b8a07d9a44fe90e52d5698704c72270d177ae74/AdTest/master.m3u8"
+                                    outerVideoURLObject.currentVideoTitle = "HLS LIVE SSAI"
+                                } label: {
+                                    VStack {
+                                        Image(systemName: "play.tv")
+                                            .font(.system(size: 100))
+                                        Text("HLS LIVE SSAI")
+                                            .bold()
+                                    }
+                                    .frame(width: 550, height: 250)
+                                }
+                            }
+                        }
+                        .padding()
+                    }
+                    .focusSection()
                 }
-            }
-            else {
+            } else {
                 VideoView(innerURLObject: outerVideoURLObject)
             }
         }

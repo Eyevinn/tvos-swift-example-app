@@ -70,10 +70,10 @@
 		89C947D5C268E717A8200D261EB583F7 /* Pods-EyevinnTV-EyevinnTVUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EyevinnTV-EyevinnTVUITests-umbrella.h"; sourceTree = "<group>"; };
 		90D0E4D86FBED3175B9E25332B512CFD /* Pods-EyevinnTV-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EyevinnTV-Info.plist"; sourceTree = "<group>"; };
 		9150A2843EA75C602EC4E7C6C9EF60BE /* Pods-EyevinnTV-EyevinnTVUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EyevinnTV-EyevinnTVUITests-Info.plist"; sourceTree = "<group>"; };
-		97D014AD6344E543FEDB1FD1F8F2BFEC /* SWXMLHash */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SWXMLHash; path = SWXMLHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97D014AD6344E543FEDB1FD1F8F2BFEC /* SWXMLHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWXMLHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97EB24CE353C5F6549F53FDDC68A775C /* Pods-EyevinnTV-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EyevinnTV-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9807311068BD787F6365CC51506FDC8F /* Pods-EyevinnTV-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EyevinnTV-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0B215479D251261D66F026326232FF7 /* Pods-EyevinnTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EyevinnTVTests.release.xcconfig"; sourceTree = "<group>"; };
 		A3BF5FB9C0DC50A468656E467ED233D6 /* Pods-EyevinnTVTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EyevinnTVTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AE704B3F7EFE27740FC25A5CE60A6651 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -153,7 +153,6 @@
 				B0CE164FE792F4F73C59B977972DC136 /* XMLIndexer+XMLIndexerDeserializable.swift */,
 				F6455E5C2A4C1856ED9F92D51AA2DD01 /* Support Files */,
 			);
-			name = SWXMLHash;
 			path = SWXMLHash;
 			sourceTree = "<group>";
 		};
@@ -197,7 +196,7 @@
 				6C7EB629870D869D027781C072FC64C8 /* Pods-EyevinnTV */,
 				DFC165FD56207AC6A318E85872C80C1B /* Pods-EyevinnTV-EyevinnTVUITests */,
 				FBE574A481F825917A6A8172D0D06F7D /* Pods-EyevinnTVTests */,
-				97D014AD6344E543FEDB1FD1F8F2BFEC /* SWXMLHash */,
+				97D014AD6344E543FEDB1FD1F8F2BFEC /* SWXMLHash.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -372,7 +371,7 @@
 			);
 			name = SWXMLHash;
 			productName = SWXMLHash;
-			productReference = 97D014AD6344E543FEDB1FD1F8F2BFEC /* SWXMLHash */;
+			productReference = 97D014AD6344E543FEDB1FD1F8F2BFEC /* SWXMLHash.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -382,7 +381,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1330;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -561,7 +560,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -693,7 +692,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
