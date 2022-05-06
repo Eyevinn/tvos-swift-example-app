@@ -63,7 +63,7 @@
 		3B9CF0D792A65C572F99F0C74FC206FD /* Pods-EyevinnTV-EyevinnTVUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EyevinnTV-EyevinnTVUITests-frameworks.sh"; sourceTree = "<group>"; };
 		4AC67A66D3C96CF6AD6796FD9C0CB7FD /* SWXMLHash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWXMLHash.release.xcconfig; sourceTree = "<group>"; };
 		5D59CEC622BC39647EF889453BE7427F /* SWXMLHash.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SWXMLHash.modulemap; sourceTree = "<group>"; };
-		6C7EB629870D869D027781C072FC64C8 /* Pods-EyevinnTV */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-EyevinnTV"; path = Pods_EyevinnTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C7EB629870D869D027781C072FC64C8 /* Pods_EyevinnTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyevinnTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7076A6C83796B07AE2D792E9074366CB /* Pods-EyevinnTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EyevinnTV.release.xcconfig"; sourceTree = "<group>"; };
 		800DC2A13A6304E3BA2FC30F3B61F2E5 /* Pods-EyevinnTV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EyevinnTV.modulemap"; sourceTree = "<group>"; };
 		80DDB98F54D90F17DAB9179E68C7FB92 /* Pods-EyevinnTV-EyevinnTVUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EyevinnTV-EyevinnTVUITests.modulemap"; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 		AF28A9EFBF64E2F36EC5717A94F71FA4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6C7EB629870D869D027781C072FC64C8 /* Pods-EyevinnTV */,
+				6C7EB629870D869D027781C072FC64C8 /* Pods_EyevinnTV.framework */,
 				DFC165FD56207AC6A318E85872C80C1B /* Pods-EyevinnTV-EyevinnTVUITests */,
 				FBE574A481F825917A6A8172D0D06F7D /* Pods-EyevinnTVTests */,
 				97D014AD6344E543FEDB1FD1F8F2BFEC /* SWXMLHash.framework */,
@@ -315,7 +315,7 @@
 			);
 			name = "Pods-EyevinnTV";
 			productName = Pods_EyevinnTV;
-			productReference = 6C7EB629870D869D027781C072FC64C8 /* Pods-EyevinnTV */;
+			productReference = 6C7EB629870D869D027781C072FC64C8 /* Pods_EyevinnTV.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		33AEE8A90A31771244442C24B71FE259 /* Pods-EyevinnTV-EyevinnTVUITests */ = {

@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  EyevinnTV
+//
+//  Created by Sebastian Ljungman on 2022-05-06.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "./Pods/Target Support Files/Pods-EyevinnTV/Pods-EyevinnTV.debug.xcconfig"
