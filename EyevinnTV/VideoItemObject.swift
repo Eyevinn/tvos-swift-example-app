@@ -11,5 +11,5 @@ import AVKit
 class Item: Identifiable {
     var title = ""
     var id = ""
-    var videoURL = ""
+    var videoUrl = ""
 }

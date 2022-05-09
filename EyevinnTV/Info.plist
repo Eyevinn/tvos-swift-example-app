@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
+	<key>VOD_XML</key>
+	<string>$(VOD_XML)</string>
+	<key>LIVE_XML</key>
+	<string>$(LIVE_XML)</string>
+	<key>NSSupportsSuddenTermination</key>
+	<false/>
+</dict>
+</plist>

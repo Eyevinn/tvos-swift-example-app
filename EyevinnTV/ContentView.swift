@@ -8,25 +8,22 @@
 import SwiftUI
 import SWXMLHash
 
-class videoURLObject: ObservableObject {
-    @Published var currentVideoURL = ""
+class videoUrlObject: ObservableObject {
+    @Published var currentVideoUrl = ""
     @Published var currentVideoTitle = ""
 }
 
 struct ContentView: View {
     @State var videoItems = [Item]()
     @State var liveVideoItems = [Item]()
-    @StateObject var outerVideoURLObject = videoURLObject()
-
-    private var urlXmlVod = "https://testcontent.mrss.eyevinn.technology/"
-    private let localXmlVod = "testContent"
-    private let localXmlLive = "liveTestContent"
+    @StateObject var outerVideoUrlObject = videoUrlObject()
     
-    private var readLocal = false
+    private var vodXml: String = (Bundle.main.infoDictionary?["VOD_XML"] as! String).replacingOccurrences(of: "\\", with: "")
+    private var liveXml: String = (Bundle.main.infoDictionary?["LIVE_XML"] as! String).replacingOccurrences(of: "\\", with: "")
     
     var body: some View {
         NavigationView {
-            if outerVideoURLObject.currentVideoURL == "" {
+            if outerVideoUrlObject.currentVideoUrl == "" {
                 VStack{
                     Image("eyevinn-logo")
                         .resizable()
@@ -38,9 +35,9 @@ struct ContentView: View {
                             ForEach(videoItems) { item in
                                 VStack {
                                     Button {
-                                        outerVideoURLObject.currentVideoURL = item.videoURL
-                                        outerVideoURLObject.currentVideoTitle = item.title
-                                        print(item.videoURL) } label: {
+                                        outerVideoUrlObject.currentVideoUrl = item.videoUrl
+                                        outerVideoUrlObject.currentVideoTitle = item.title
+                                        print(item.videoUrl) } label: {
                                             VStack {
                                                 Image(systemName: "play.tv")
                                                     .font(.system(size: 100))
@@ -60,9 +57,9 @@ struct ContentView: View {
                             ForEach(liveVideoItems) { item in
                                 VStack {
                                     Button {
-                                        outerVideoURLObject.currentVideoURL = item.videoURL
-                                        outerVideoURLObject.currentVideoTitle = item.title
-                                        print(item.videoURL) } label: {
+                                        outerVideoUrlObject.currentVideoUrl = item.videoUrl
+                                        outerVideoUrlObject.currentVideoTitle = item.title
+                                        print(item.videoUrl) } label: {
                                             VStack {
                                                 Image(systemName: "play.tv")
                                                     .font(.system(size: 100))
@@ -79,7 +76,7 @@ struct ContentView: View {
                     .focusSection()
                 }
             } else {
-                VideoView(innerURLObject: outerVideoURLObject)
+                VideoView(innerUrlObject: outerVideoUrlObject)
             }
         }
         .onAppear() {
@@ -95,42 +92,33 @@ struct ContentView: View {
             let item = Item()
             item.title = elem["title"].element!.text
             item.id = elem["id"].element!.text
-            item.videoURL = elem["link"].element!.text
+            item.videoUrl = elem["link"].element!.text
             isLive ? liveVideoItems.append(item) : videoItems.append(item)
         }
     }
     
     func loadData() {
-        if readLocal {
-            let xmlPath = Bundle.main.path(forResource: localXmlVod, ofType: "xml")
-            let data = NSData(contentsOfFile: xmlPath!)
+        [vodXml, liveXml].forEach {
+            let isLive = $0 == liveXml
             
-            if data != nil
-            {
-                let feed = NSString(data: data! as Data, encoding: String.Encoding.utf8.rawValue)! as String
-                parseXML(feed: feed, isLive: false)
-            }
-        }
-        
-        else {
-            let url = NSURL(string: urlXmlVod)
-            let task = URLSession.shared.dataTask(with: url! as URL) {(data, response, error) in
-                if data != nil
-                {
-                    let feed = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)! as String
-                    parseXML(feed: feed, isLive: false)
+            if $0.prefix(7) == "file://" || $0.prefix(7) == "http://" || $0.prefix(8) == "https://" {
+                let url = NSURL(string: $0)
+                let task = URLSession.shared.dataTask(with: url! as URL) {(data, response, error) in
+                    if data != nil {
+                        let feed = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)! as String
+                        parseXML(feed: feed, isLive: isLive)
+                    }
+                }
+                task.resume()
+            } else {
+                let filenameInBundle = Bundle.main.path(forResource: $0, ofType: "xml")
+                let data = NSData(contentsOfFile: filenameInBundle!)
+                
+                if data != nil {
+                    let feed = NSString(data: data! as Data, encoding: String.Encoding.utf8.rawValue)! as String
+                    parseXML(feed: feed, isLive: isLive)
                 }
             }
-            task.resume()
-        }
-        
-        let xmlPath = Bundle.main.path(forResource: localXmlLive, ofType: "xml")
-        let data = NSData(contentsOfFile: xmlPath!)
-
-        if data != nil
-        {
-            let feed = NSString(data: data! as Data, encoding: String.Encoding.utf8.rawValue)! as String
-            parseXML(feed: feed, isLive: true)
         }
     }
 }

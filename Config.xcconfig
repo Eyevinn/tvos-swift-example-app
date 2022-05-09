@@ -8,4 +8,14 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-#include "./Pods/Target Support Files/Pods-EyevinnTV/Pods-EyevinnTV.debug.xcconfig"
+//The mRSS XML files can be specified as either URI:s or filenames within the project.
+
+// URI:s can be specified as either HTTP, HTTPS or FILE URL:s (Remeber to escape double slashes and replace spaces with %20)
+// HTTPS example: https:\/\/testcontent.mrss.eyevinn.technology/
+// To use HTTP, add your domain to Exception Domains in your Info.plist.
+
+// If using filenames within the project, use only the filenames. No .xml extension, and no relative paths. If the files exists anywhere in the project, they should be found with just the filenames.
+// Project filename example: testContent
+
+VOD_XML = //https:\/\/testcontent.mrss.eyevinn.technology/
+LIVE_XML = liveTestContent
