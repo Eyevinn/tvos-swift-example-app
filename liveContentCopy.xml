@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>livetestcontent.mrss.eyevinn.technology</id>
+    <title>Feed for LIVE Test-Content</title>
+    <updated>2022-05-05</updated>
+    <entry>
+        <title>HLS LIVE</title>
+        <id>LIVE_1</id>
+        <link>https://d2fz24s2fts31b.cloudfront.net/out/v1/6484d7c664924b77893f9b4f63080e5d/manifest.m3u8</link>
+    </entry>
+    <entry>
+        <title>HLS LIVE SSAI</title>
+        <id>LIVE_2</id>
+        <link>https://edfaeed9c7154a20828a30a26878ade0.mediatailor.eu-west-1.amazonaws.com/v1/master/1b8a07d9a44fe90e52d5698704c72270d177ae74/AdTest/master.m3u8</link>
+    </entry>
+</feed>

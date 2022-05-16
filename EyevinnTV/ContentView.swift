@@ -16,14 +16,17 @@ class videoUrlObject: ObservableObject {
 struct ContentView: View {
     @State var videoItems = [Item]()
     @State var liveVideoItems = [Item]()
-    @StateObject var outerVideoUrlObject = videoUrlObject()
+    @StateObject var currentVideoUrlObject = videoUrlObject()
     
-    private var vodXml: String = (Bundle.main.infoDictionary?["VOD_XML"] as! String).replacingOccurrences(of: "\\", with: "")
-    private var liveXml: String = (Bundle.main.infoDictionary?["LIVE_XML"] as! String).replacingOccurrences(of: "\\", with: "")
+    private var vodXml: String = ((Bundle.main.infoDictionary?["VOD_XML"] as! String).replacingOccurrences(of: "\\", with: "").prefix(7) == "file://") ?
+    "vodContentCopy" : (Bundle.main.infoDictionary?["VOD_XML"] as! String).replacingOccurrences(of: "\\", with: "")
+    
+    private var liveXml: String = (Bundle.main.infoDictionary?["LIVE_XML"] as! String).replacingOccurrences(of: "\\", with: "").prefix(7) == "file://" ?
+    "liveContentCopy" : (Bundle.main.infoDictionary?["LIVE_XML"] as! String).replacingOccurrences(of: "\\", with: "")
     
     var body: some View {
         NavigationView {
-            if outerVideoUrlObject.currentVideoUrl == "" {
+            if currentVideoUrlObject.currentVideoUrl == "" {
                 VStack{
                     Image("eyevinn-logo")
                         .resizable()
@@ -35,8 +38,8 @@ struct ContentView: View {
                             ForEach(videoItems) { item in
                                 VStack {
                                     Button {
-                                        outerVideoUrlObject.currentVideoUrl = item.videoUrl
-                                        outerVideoUrlObject.currentVideoTitle = item.title
+                                        currentVideoUrlObject.currentVideoUrl = item.videoUrl
+                                        currentVideoUrlObject.currentVideoTitle = item.title
                                         print(item.videoUrl) } label: {
                                             VStack {
                                                 Image(systemName: "play.tv")
@@ -57,8 +60,8 @@ struct ContentView: View {
                             ForEach(liveVideoItems) { item in
                                 VStack {
                                     Button {
-                                        outerVideoUrlObject.currentVideoUrl = item.videoUrl
-                                        outerVideoUrlObject.currentVideoTitle = item.title
+                                        currentVideoUrlObject.currentVideoUrl = item.videoUrl
+                                        currentVideoUrlObject.currentVideoTitle = item.title
                                         print(item.videoUrl) } label: {
                                             VStack {
                                                 Image(systemName: "play.tv")
@@ -76,7 +79,7 @@ struct ContentView: View {
                     .focusSection()
                 }
             } else {
-                VideoView(innerUrlObject: outerVideoUrlObject)
+                VideoView(currentVideoUrlObject: currentVideoUrlObject)
             }
         }
         .onAppear() {
@@ -99,9 +102,9 @@ struct ContentView: View {
     
     func loadData() {
         [vodXml, liveXml].forEach {
-            let isLive = $0 == liveXml
+            let isLive = $0 == liveXml ? true : false
             
-            if $0.prefix(7) == "file://" || $0.prefix(7) == "http://" || $0.prefix(8) == "https://" {
+            if $0.prefix(7) == "http://" || $0.prefix(8) == "https://" {
                 let url = NSURL(string: $0)
                 let task = URLSession.shared.dataTask(with: url! as URL) {(data, response, error) in
                     if data != nil {

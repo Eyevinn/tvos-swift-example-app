@@ -9,14 +9,14 @@ import SwiftUI
 import AVKit
 
 struct VideoView: View {
-    @ObservedObject var innerUrlObject: videoUrlObject
+    @ObservedObject var currentVideoUrlObject: videoUrlObject
     @State private var player: AVPlayer?
     
     var body: some View {
         HStack {
             VideoPlayer(player: player)
             .onAppear() {
-                guard let url = URL(string: innerUrlObject.currentVideoUrl) else {
+                guard let url = URL(string: currentVideoUrlObject.currentVideoUrl) else {
                     return
                 }
                 let player = AVPlayer(url: url)
@@ -26,7 +26,7 @@ struct VideoView: View {
             .frame(width: 1920, height: 1080, alignment: .bottomLeading)
         }
         .onExitCommand() {
-            innerUrlObject.currentVideoUrl = ""
+            currentVideoUrlObject.currentVideoUrl = ""
         }
     }
 }

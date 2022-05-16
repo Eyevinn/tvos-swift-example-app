@@ -17,7 +17,9 @@
 		0375B7E028211D8100C86A39 /* EyevinnTVUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0375B7DF28211D8100C86A39 /* EyevinnTVUITestsLaunchTests.swift */; };
 		0375B7ED282128FC00C86A39 /* VideoItemObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0375B7EC282128FC00C86A39 /* VideoItemObject.swift */; };
 		0375B7F1282157F600C86A39 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0375B7F0282157F600C86A39 /* VideoView.swift */; };
-		03B0A69828240801004CE0DC /* testContent.xml in Resources */ = {isa = PBXBuildFile; fileRef = 03B0A69728240801004CE0DC /* testContent.xml */; };
+		03963C55283238CD00D862FB /* liveContentCopy.xml in Resources */ = {isa = PBXBuildFile; fileRef = 03963C54283238CD00D862FB /* liveContentCopy.xml */; };
+		03963C63283293DD00D862FB /* vodContentCopy.xml in Resources */ = {isa = PBXBuildFile; fileRef = 73E8A580D5B1D6EFDF59453A /* vodContentCopy.xml */; };
+		03B0A69828240801004CE0DC /* vodTestContent.xml in Resources */ = {isa = PBXBuildFile; fileRef = 03B0A69728240801004CE0DC /* vodTestContent.xml */; };
 		121DFFE43C50EBBBA49A8988 /* Pods_EyevinnTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB473C1F10D56B8E344893B /* Pods_EyevinnTVTests.framework */; };
 		3DEC052FD89D4EFB7EAFC94E /* Pods_EyevinnTV_EyevinnTVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A693F1EE9D3EA448261E0C7C /* Pods_EyevinnTV_EyevinnTVUITests.framework */; };
 		4396097D7226A579043658DC /* Pods_EyevinnTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2386B4E3562A0F6846DC626B /* Pods_EyevinnTV.framework */; };
@@ -42,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		032CBA1E282933B4001F318D /* liveTestContent.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = liveTestContent.xml; sourceTree = "<group>"; };
+		03489E2A282A420D0016E6B6 /* CopyXml.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyXml.swift; sourceTree = "<group>"; };
 		035EBB9F2825119300C7D071 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		035EBBA128253D0200C7D071 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		035EBBA22825420200C7D071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -57,15 +60,17 @@
 		0375B7DF28211D8100C86A39 /* EyevinnTVUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyevinnTVUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0375B7EC282128FC00C86A39 /* VideoItemObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoItemObject.swift; sourceTree = "<group>"; };
 		0375B7F0282157F600C86A39 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
-		03B0A69728240801004CE0DC /* testContent.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = testContent.xml; sourceTree = "<group>"; };
+		03963C54283238CD00D862FB /* liveContentCopy.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = liveContentCopy.xml; sourceTree = "<group>"; };
+		03B0A69728240801004CE0DC /* vodTestContent.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vodTestContent.xml; sourceTree = "<group>"; };
 		1C6AC8740C09C166E8F16804 /* Pods-EyevinnTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTVTests.debug.xcconfig"; path = "Target Support Files/Pods-EyevinnTVTests/Pods-EyevinnTVTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2386B4E3562A0F6846DC626B /* Pods_EyevinnTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyevinnTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F085D1354FB3500A24D53A7 /* Pods-EyevinnTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTV.release.xcconfig"; path = "Target Support Files/Pods-EyevinnTV/Pods-EyevinnTV.release.xcconfig"; sourceTree = "<group>"; };
 		696EED9E57099F6C1BF5B296 /* Pods-EyevinnTV-EyevinnTVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTV-EyevinnTVUITests.release.xcconfig"; path = "Target Support Files/Pods-EyevinnTV-EyevinnTVUITests/Pods-EyevinnTV-EyevinnTVUITests.release.xcconfig"; sourceTree = "<group>"; };
-		757DCD45453DA28579F3D11A /* Pods-EyevinnTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTV.debug.xcconfig"; path = "Target Support Files/Pods-EyevinnTV/Pods-EyevinnTV.debug.xcconfig"; sourceTree = "<group>"; };
+		73E8A580D5B1D6EFDF59453A /* vodContentCopy.xml */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; path = vodContentCopy.xml; sourceTree = "<group>"; };
 		A693F1EE9D3EA448261E0C7C /* Pods_EyevinnTV_EyevinnTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyevinnTV_EyevinnTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1D0648E009F251FA48614A6 /* Pods-EyevinnTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTV.debug.xcconfig"; path = "Target Support Files/Pods-EyevinnTV/Pods-EyevinnTV.debug.xcconfig"; sourceTree = "<group>"; };
 		B97D11F9E04440825C2C82D2 /* Pods-EyevinnTV-EyevinnTVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTV-EyevinnTVUITests.debug.xcconfig"; path = "Target Support Files/Pods-EyevinnTV-EyevinnTVUITests/Pods-EyevinnTV-EyevinnTVUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DEB473C1F10D56B8E344893B /* Pods_EyevinnTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyevinnTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1DD85A65F4F4B744F194A13 /* Pods-EyevinnTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTV.release.xcconfig"; path = "Target Support Files/Pods-EyevinnTV/Pods-EyevinnTV.release.xcconfig"; sourceTree = "<group>"; };
 		E8B9D45DFE7B6DC9E6FE65B5 /* Pods-EyevinnTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTVTests.release.xcconfig"; path = "Target Support Files/Pods-EyevinnTVTests/Pods-EyevinnTVTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,17 +105,28 @@
 		032CBA1D28291E61001F318D /* Test Content */ = {
 			isa = PBXGroup;
 			children = (
-				03B0A69728240801004CE0DC /* testContent.xml */,
+				03B0A69728240801004CE0DC /* vodTestContent.xml */,
 				032CBA1E282933B4001F318D /* liveTestContent.xml */,
 			);
 			path = "Test Content";
 			sourceTree = "<group>";
 		};
+		03489E29282A41EF0016E6B6 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				03489E2A282A420D0016E6B6 /* CopyXml.swift */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		0375B7B628211D8000C86A39 = {
 			isa = PBXGroup;
 			children = (
+				03489E29282A41EF0016E6B6 /* Scripts */,
 				035EBBA128253D0200C7D071 /* .gitignore */,
 				035EBB9F2825119300C7D071 /* Config.xcconfig */,
+				03963C54283238CD00D862FB /* liveContentCopy.xml */,
+				73E8A580D5B1D6EFDF59453A /* vodContentCopy.xml */,
 				032CBA1D28291E61001F318D /* Test Content */,
 				0375B7C128211D8000C86A39 /* EyevinnTV */,
 				0375B7D228211D8100C86A39 /* EyevinnTVTests */,
@@ -183,12 +199,12 @@
 		AD559B343C4963924762BB21 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				757DCD45453DA28579F3D11A /* Pods-EyevinnTV.debug.xcconfig */,
-				3F085D1354FB3500A24D53A7 /* Pods-EyevinnTV.release.xcconfig */,
 				B97D11F9E04440825C2C82D2 /* Pods-EyevinnTV-EyevinnTVUITests.debug.xcconfig */,
 				696EED9E57099F6C1BF5B296 /* Pods-EyevinnTV-EyevinnTVUITests.release.xcconfig */,
 				1C6AC8740C09C166E8F16804 /* Pods-EyevinnTVTests.debug.xcconfig */,
 				E8B9D45DFE7B6DC9E6FE65B5 /* Pods-EyevinnTVTests.release.xcconfig */,
+				B1D0648E009F251FA48614A6 /* Pods-EyevinnTV.debug.xcconfig */,
+				E1DD85A65F4F4B744F194A13 /* Pods-EyevinnTV.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -201,6 +217,7 @@
 			buildConfigurationList = 0375B7E328211D8100C86A39 /* Build configuration list for PBXNativeTarget "EyevinnTV" */;
 			buildPhases = (
 				A89F9A90083266A7183D72F7 /* [CP] Check Pods Manifest.lock */,
+				03489E2D282A58720016E6B6 /* Copy XML Script */,
 				0375B7BB28211D8000C86A39 /* Sources */,
 				0375B7BC28211D8000C86A39 /* Frameworks */,
 				0375B7BD28211D8000C86A39 /* Resources */,
@@ -304,8 +321,10 @@
 			files = (
 				0375B7CA28211D8100C86A39 /* Preview Assets.xcassets in Resources */,
 				0375B7C728211D8100C86A39 /* Assets.xcassets in Resources */,
-				03B0A69828240801004CE0DC /* testContent.xml in Resources */,
+				03B0A69828240801004CE0DC /* vodTestContent.xml in Resources */,
 				032CBA1F282933B4001F318D /* liveTestContent.xml in Resources */,
+				03963C55283238CD00D862FB /* liveContentCopy.xml in Resources */,
+				03963C63283293DD00D862FB /* vodContentCopy.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +345,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		03489E2D282A58720016E6B6 /* Copy XML Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"",
+				"",
+			);
+			inputPaths = (
+				"$(SRCROOT)/Scripts/CopyXml.swift",
+				"",
+			);
+			name = "Copy XML Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/vodContentCopy.xml",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nxcrun --sdk macosx swiftc -parse-as-library $SCRIPT_INPUT_FILE_0 -o CompiledScript\n./CompiledScript\n";
+		};
 		1F2E74166E5AF2DBB6608ABE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -589,7 +631,7 @@
 		};
 		0375B7E428211D8100C86A39 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 757DCD45453DA28579F3D11A /* Pods-EyevinnTV.debug.xcconfig */;
+			baseConfigurationReference = B1D0648E009F251FA48614A6 /* Pods-EyevinnTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -598,6 +640,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"EyevinnTV/Preview Content\"";
 				DEVELOPMENT_TEAM = RK9YNC9TPH;
 				ENABLE_PREVIEWS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EyevinnTV/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
@@ -620,7 +663,7 @@
 		};
 		0375B7E528211D8100C86A39 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F085D1354FB3500A24D53A7 /* Pods-EyevinnTV.release.xcconfig */;
+			baseConfigurationReference = E1DD85A65F4F4B744F194A13 /* Pods-EyevinnTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -629,6 +672,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"EyevinnTV/Preview Content\"";
 				DEVELOPMENT_TEAM = RK9YNC9TPH;
 				ENABLE_PREVIEWS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EyevinnTV/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
