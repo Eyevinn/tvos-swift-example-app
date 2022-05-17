@@ -20,9 +20,9 @@
 		03963C55283238CD00D862FB /* liveContentCopy.xml in Resources */ = {isa = PBXBuildFile; fileRef = 03963C54283238CD00D862FB /* liveContentCopy.xml */; };
 		03963C63283293DD00D862FB /* vodContentCopy.xml in Resources */ = {isa = PBXBuildFile; fileRef = 73E8A580D5B1D6EFDF59453A /* vodContentCopy.xml */; };
 		03B0A69828240801004CE0DC /* vodTestContent.xml in Resources */ = {isa = PBXBuildFile; fileRef = 03B0A69728240801004CE0DC /* vodTestContent.xml */; };
-		121DFFE43C50EBBBA49A8988 /* Pods_EyevinnTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB473C1F10D56B8E344893B /* Pods_EyevinnTVTests.framework */; };
-		3DEC052FD89D4EFB7EAFC94E /* Pods_EyevinnTV_EyevinnTVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A693F1EE9D3EA448261E0C7C /* Pods_EyevinnTV_EyevinnTVUITests.framework */; };
-		4396097D7226A579043658DC /* Pods_EyevinnTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2386B4E3562A0F6846DC626B /* Pods_EyevinnTV.framework */; };
+		D1ECF192ADCB3DC84AE92761 /* Pods_EyevinnTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC281232F09A36AC9C322B37 /* Pods_EyevinnTV.framework */; };
+		DCDFBD4D6D81CDE87996246C /* Pods_EyevinnTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460414F4891D1A1A837FB2CE /* Pods_EyevinnTVTests.framework */; };
+		E1D72337ADCBB2812DF14455 /* Pods_EyevinnTV_EyevinnTVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B44585BDCC8200AB3C26FB /* Pods_EyevinnTV_EyevinnTVUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,16 +62,16 @@
 		0375B7F0282157F600C86A39 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		03963C54283238CD00D862FB /* liveContentCopy.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = liveContentCopy.xml; sourceTree = "<group>"; };
 		03B0A69728240801004CE0DC /* vodTestContent.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vodTestContent.xml; sourceTree = "<group>"; };
-		1C6AC8740C09C166E8F16804 /* Pods-EyevinnTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTVTests.debug.xcconfig"; path = "Target Support Files/Pods-EyevinnTVTests/Pods-EyevinnTVTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2386B4E3562A0F6846DC626B /* Pods_EyevinnTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyevinnTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		696EED9E57099F6C1BF5B296 /* Pods-EyevinnTV-EyevinnTVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTV-EyevinnTVUITests.release.xcconfig"; path = "Target Support Files/Pods-EyevinnTV-EyevinnTVUITests/Pods-EyevinnTV-EyevinnTVUITests.release.xcconfig"; sourceTree = "<group>"; };
+		12EDCD5564ABFC0A18A6F89E /* Pods-EyevinnTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTVTests.release.xcconfig"; path = "Target Support Files/Pods-EyevinnTVTests/Pods-EyevinnTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		460414F4891D1A1A837FB2CE /* Pods_EyevinnTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyevinnTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47B44585BDCC8200AB3C26FB /* Pods_EyevinnTV_EyevinnTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyevinnTV_EyevinnTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C5D3A1158AF4F85FA630B66 /* Pods-EyevinnTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTVTests.debug.xcconfig"; path = "Target Support Files/Pods-EyevinnTVTests/Pods-EyevinnTVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		710ECF2EDEBEDDF21B28EA05 /* Pods-EyevinnTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTV.release.xcconfig"; path = "Target Support Files/Pods-EyevinnTV/Pods-EyevinnTV.release.xcconfig"; sourceTree = "<group>"; };
 		73E8A580D5B1D6EFDF59453A /* vodContentCopy.xml */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; path = vodContentCopy.xml; sourceTree = "<group>"; };
-		A693F1EE9D3EA448261E0C7C /* Pods_EyevinnTV_EyevinnTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyevinnTV_EyevinnTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1D0648E009F251FA48614A6 /* Pods-EyevinnTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTV.debug.xcconfig"; path = "Target Support Files/Pods-EyevinnTV/Pods-EyevinnTV.debug.xcconfig"; sourceTree = "<group>"; };
-		B97D11F9E04440825C2C82D2 /* Pods-EyevinnTV-EyevinnTVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTV-EyevinnTVUITests.debug.xcconfig"; path = "Target Support Files/Pods-EyevinnTV-EyevinnTVUITests/Pods-EyevinnTV-EyevinnTVUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		DEB473C1F10D56B8E344893B /* Pods_EyevinnTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyevinnTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1DD85A65F4F4B744F194A13 /* Pods-EyevinnTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTV.release.xcconfig"; path = "Target Support Files/Pods-EyevinnTV/Pods-EyevinnTV.release.xcconfig"; sourceTree = "<group>"; };
-		E8B9D45DFE7B6DC9E6FE65B5 /* Pods-EyevinnTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTVTests.release.xcconfig"; path = "Target Support Files/Pods-EyevinnTVTests/Pods-EyevinnTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		902104748267FF6B87F0DB9B /* Pods-EyevinnTV-EyevinnTVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTV-EyevinnTVUITests.debug.xcconfig"; path = "Target Support Files/Pods-EyevinnTV-EyevinnTVUITests/Pods-EyevinnTV-EyevinnTVUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4C56C70DDD55E00DA4820A2 /* Pods-EyevinnTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTV.debug.xcconfig"; path = "Target Support Files/Pods-EyevinnTV/Pods-EyevinnTV.debug.xcconfig"; sourceTree = "<group>"; };
+		CC281232F09A36AC9C322B37 /* Pods_EyevinnTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyevinnTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D62F58DBA5791FB8EAD02B3F /* Pods-EyevinnTV-EyevinnTVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTV-EyevinnTVUITests.release.xcconfig"; path = "Target Support Files/Pods-EyevinnTV-EyevinnTVUITests/Pods-EyevinnTV-EyevinnTVUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4396097D7226A579043658DC /* Pods_EyevinnTV.framework in Frameworks */,
+				D1ECF192ADCB3DC84AE92761 /* Pods_EyevinnTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				121DFFE43C50EBBBA49A8988 /* Pods_EyevinnTVTests.framework in Frameworks */,
+				DCDFBD4D6D81CDE87996246C /* Pods_EyevinnTVTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DEC052FD89D4EFB7EAFC94E /* Pods_EyevinnTV_EyevinnTVUITests.framework in Frameworks */,
+				E1D72337ADCBB2812DF14455 /* Pods_EyevinnTV_EyevinnTVUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,8 +132,8 @@
 				0375B7D228211D8100C86A39 /* EyevinnTVTests */,
 				0375B7DC28211D8100C86A39 /* EyevinnTVUITests */,
 				0375B7C028211D8000C86A39 /* Products */,
-				AD559B343C4963924762BB21 /* Pods */,
-				03F65CC1B5DC721C6B254FE7 /* Frameworks */,
+				D85C9B3549F2DC66C6B72D01 /* Pods */,
+				BFD74D9F487FF666BA9CF4A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,26 +186,27 @@
 			path = EyevinnTVUITests;
 			sourceTree = "<group>";
 		};
-		03F65CC1B5DC721C6B254FE7 /* Frameworks */ = {
+		BFD74D9F487FF666BA9CF4A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2386B4E3562A0F6846DC626B /* Pods_EyevinnTV.framework */,
-				A693F1EE9D3EA448261E0C7C /* Pods_EyevinnTV_EyevinnTVUITests.framework */,
-				DEB473C1F10D56B8E344893B /* Pods_EyevinnTVTests.framework */,
+				CC281232F09A36AC9C322B37 /* Pods_EyevinnTV.framework */,
+				47B44585BDCC8200AB3C26FB /* Pods_EyevinnTV_EyevinnTVUITests.framework */,
+				460414F4891D1A1A837FB2CE /* Pods_EyevinnTVTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		AD559B343C4963924762BB21 /* Pods */ = {
+		D85C9B3549F2DC66C6B72D01 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B97D11F9E04440825C2C82D2 /* Pods-EyevinnTV-EyevinnTVUITests.debug.xcconfig */,
-				696EED9E57099F6C1BF5B296 /* Pods-EyevinnTV-EyevinnTVUITests.release.xcconfig */,
-				1C6AC8740C09C166E8F16804 /* Pods-EyevinnTVTests.debug.xcconfig */,
-				E8B9D45DFE7B6DC9E6FE65B5 /* Pods-EyevinnTVTests.release.xcconfig */,
-				B1D0648E009F251FA48614A6 /* Pods-EyevinnTV.debug.xcconfig */,
-				E1DD85A65F4F4B744F194A13 /* Pods-EyevinnTV.release.xcconfig */,
+				A4C56C70DDD55E00DA4820A2 /* Pods-EyevinnTV.debug.xcconfig */,
+				710ECF2EDEBEDDF21B28EA05 /* Pods-EyevinnTV.release.xcconfig */,
+				902104748267FF6B87F0DB9B /* Pods-EyevinnTV-EyevinnTVUITests.debug.xcconfig */,
+				D62F58DBA5791FB8EAD02B3F /* Pods-EyevinnTV-EyevinnTVUITests.release.xcconfig */,
+				5C5D3A1158AF4F85FA630B66 /* Pods-EyevinnTVTests.debug.xcconfig */,
+				12EDCD5564ABFC0A18A6F89E /* Pods-EyevinnTVTests.release.xcconfig */,
 			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -216,12 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0375B7E328211D8100C86A39 /* Build configuration list for PBXNativeTarget "EyevinnTV" */;
 			buildPhases = (
-				A89F9A90083266A7183D72F7 /* [CP] Check Pods Manifest.lock */,
+				B0B15DE5914029226948AB54 /* [CP] Check Pods Manifest.lock */,
 				03489E2D282A58720016E6B6 /* Copy XML Script */,
 				0375B7BB28211D8000C86A39 /* Sources */,
 				0375B7BC28211D8000C86A39 /* Frameworks */,
 				0375B7BD28211D8000C86A39 /* Resources */,
-				1F2E74166E5AF2DBB6608ABE /* [CP] Embed Pods Frameworks */,
+				C66622229C88CF3DE67A9722 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,7 +237,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0375B7E628211D8100C86A39 /* Build configuration list for PBXNativeTarget "EyevinnTVTests" */;
 			buildPhases = (
-				B63F96423D2680AFF0490A1B /* [CP] Check Pods Manifest.lock */,
+				5FD78F080BD326E1F25A3544 /* [CP] Check Pods Manifest.lock */,
 				0375B7CB28211D8100C86A39 /* Sources */,
 				0375B7CC28211D8100C86A39 /* Frameworks */,
 				0375B7CD28211D8100C86A39 /* Resources */,
@@ -255,11 +256,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0375B7E928211D8100C86A39 /* Build configuration list for PBXNativeTarget "EyevinnTVUITests" */;
 			buildPhases = (
-				2720C460CDF0F8E51A89DB59 /* [CP] Check Pods Manifest.lock */,
+				AD71E55B38AEC7F2906FD770 /* [CP] Check Pods Manifest.lock */,
 				0375B7D528211D8100C86A39 /* Sources */,
 				0375B7D628211D8100C86A39 /* Frameworks */,
 				0375B7D728211D8100C86A39 /* Resources */,
-				467C315E45F8B4C695C9AFD8 /* [CP] Embed Pods Frameworks */,
+				4D2A85EA3001CC3278043729 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -368,24 +369,46 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nxcrun --sdk macosx swiftc -parse-as-library $SCRIPT_INPUT_FILE_0 -o CompiledScript\n./CompiledScript\n";
 		};
-		1F2E74166E5AF2DBB6608ABE /* [CP] Embed Pods Frameworks */ = {
+		4D2A85EA3001CC3278043729 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EyevinnTV/Pods-EyevinnTV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-EyevinnTV-EyevinnTVUITests/Pods-EyevinnTV-EyevinnTVUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EyevinnTV/Pods-EyevinnTV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-EyevinnTV-EyevinnTVUITests/Pods-EyevinnTV-EyevinnTVUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EyevinnTV/Pods-EyevinnTV-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EyevinnTV-EyevinnTVUITests/Pods-EyevinnTV-EyevinnTVUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2720C460CDF0F8E51A89DB59 /* [CP] Check Pods Manifest.lock */ = {
+		5FD78F080BD326E1F25A3544 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EyevinnTVTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD71E55B38AEC7F2906FD770 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -407,24 +430,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		467C315E45F8B4C695C9AFD8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EyevinnTV-EyevinnTVUITests/Pods-EyevinnTV-EyevinnTVUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EyevinnTV-EyevinnTVUITests/Pods-EyevinnTV-EyevinnTVUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EyevinnTV-EyevinnTVUITests/Pods-EyevinnTV-EyevinnTVUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A89F9A90083266A7183D72F7 /* [CP] Check Pods Manifest.lock */ = {
+		B0B15DE5914029226948AB54 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -446,26 +452,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B63F96423D2680AFF0490A1B /* [CP] Check Pods Manifest.lock */ = {
+		C66622229C88CF3DE67A9722 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EyevinnTV/Pods-EyevinnTV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EyevinnTVTests-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-EyevinnTV/Pods-EyevinnTV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EyevinnTV/Pods-EyevinnTV-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -631,7 +632,7 @@
 		};
 		0375B7E428211D8100C86A39 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1D0648E009F251FA48614A6 /* Pods-EyevinnTV.debug.xcconfig */;
+			baseConfigurationReference = A4C56C70DDD55E00DA4820A2 /* Pods-EyevinnTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -663,7 +664,7 @@
 		};
 		0375B7E528211D8100C86A39 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1DD85A65F4F4B744F194A13 /* Pods-EyevinnTV.release.xcconfig */;
+			baseConfigurationReference = 710ECF2EDEBEDDF21B28EA05 /* Pods-EyevinnTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -695,7 +696,7 @@
 		};
 		0375B7E728211D8100C86A39 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C6AC8740C09C166E8F16804 /* Pods-EyevinnTVTests.debug.xcconfig */;
+			baseConfigurationReference = 5C5D3A1158AF4F85FA630B66 /* Pods-EyevinnTVTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -715,7 +716,7 @@
 		};
 		0375B7E828211D8100C86A39 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8B9D45DFE7B6DC9E6FE65B5 /* Pods-EyevinnTVTests.release.xcconfig */;
+			baseConfigurationReference = 12EDCD5564ABFC0A18A6F89E /* Pods-EyevinnTVTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -735,7 +736,7 @@
 		};
 		0375B7EA28211D8100C86A39 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B97D11F9E04440825C2C82D2 /* Pods-EyevinnTV-EyevinnTVUITests.debug.xcconfig */;
+			baseConfigurationReference = 902104748267FF6B87F0DB9B /* Pods-EyevinnTV-EyevinnTVUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -753,7 +754,7 @@
 		};
 		0375B7EB28211D8100C86A39 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 696EED9E57099F6C1BF5B296 /* Pods-EyevinnTV-EyevinnTVUITests.release.xcconfig */;
+			baseConfigurationReference = D62F58DBA5791FB8EAD02B3F /* Pods-EyevinnTV-EyevinnTVUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
