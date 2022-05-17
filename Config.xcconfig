@@ -10,17 +10,17 @@
 
 //The mRSS XML files can be specified as either URI:s or filenames within the project.
 
-// URI:s can be specified as either HTTP, HTTPS or FILE URL:s (Remember to escape double slashes and replace spaces with %20)
+// URI:s can be specified as either HTTP, HTTPS or FILE URL:s. Remember to escape double slashes and replace spaces with %20
 // HTTPS example: https:\/\/testcontent.mrss.eyevinn.technology/
 // FILE example: file:\/\/\/Users/sebastianljungman/Dropbox/Mac/Downloads/testContent.xml
 // To use HTTP, add your domain to Exception Domains in your Info.plist.
 
-// When using a file URL, the content of the specified file will be copied at build time to the vodContentExternal and liveContentExternal XML files in the root folder of the project, which are then
+// When using a file URL, the content of the specified file will be copied at build time to the vodContentCopy and liveContentCopy XML files in the root folder of the project, which are then
 // bundled with the application. If these files are missing in the project, they will be created in the root folder, BUT you will need to drag them into the project navigator for Xcode to recognize them.
 
 // If using filenames within the project, use only the filenames. No .xml extension, and no relative paths. If the files exists anywhere in the project, they should be found with just the filenames.
 // Note that files need to be added to the Xcode project navigator - It is not enough to add them in the project folder.
 // Project filename example: vodTestContent
 
-VOD_XML = file:\/\/\/Users/sebastianljungman/Dropbox/Mac/Downloads/testContent.xml
-LIVE_XML = file:\/\/\/Users/sebastianljungman/Dropbox/Mac/Documents/liveTestContent.xml
+VOD_XML = https:\/\/testcontent.mrss.eyevinn.technology/
+LIVE_XML = liveTestContent
