@@ -6,7 +6,7 @@ The Eyevinn tvOS Example App is a simple Apple TV app that loads two mRSS feeds,
 Select which mRSS feeds to use by setting the values for keys `VOD_XML` and `LIVE_XML` in the `Config.xcconfig` configuration file. The mRSS XML feeds can be specified as either URI:s or filenames within the project. If the value for a key is left empty, no videos will be loaded for that carousel.
 
 URI:s can be specified as either HTTP, HTTPS or FILE URL:s. Remember to **escape double slashes** and **replace spaces with %20**. To use HTTP, add your domain to Exception Domains in your Info.plist.
-- HTTPS example: https:\/\/testcontent.mrss.eyevinn.technology/
+- HTTPS example: `https:\/\/testcontent.mrss.eyevinn.technology/`
 - FILE example: `file:\/\/\/Users/sebastianljungman/Dropbox/Mac/Downloads/testContent.xml`
 
 When using a file URL, the content of the specified file will be copied at build time to the `vodContentCopy` and `liveContentCopy` XML files in the **root folder** of the project, which are then bundled with the application. If these files are missing in the project, they will be created in the root folder when entering file URL:s as values, **but** you will need to drag them into the project navigator for Xcode to recognize them. These files **MUST exist in the project for file URL:s to be used**.
