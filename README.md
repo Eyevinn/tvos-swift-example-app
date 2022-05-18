@@ -5,7 +5,7 @@ The Eyevinn tvOS Example App is a simple Apple TV app that loads two mRSS feeds,
 ### Specifying mRSS feeds
 Select which mRSS feeds to use by setting the values for keys `VOD_XML` and `LIVE_XML` in the `Config.xcconfig` configuration file. The mRSS XML feeds can be specified as either URI:s or filenames within the project. If the value for a key is left empty, no videos will be loaded for that carousel.
 
-URI:s can be specified as either HTTP, HTTPS or FILE URL:s. Remember to **escape double slashes** and **replace spaces with %20**. To use HTTP, add your domain to Exception Domains in your Info.plist.
+URI:s can be specified as either HTTP, HTTPS or FILE URL:s. Remember to **escape double slashes**. To use HTTP, add your domain to Exception Domains in your Info.plist.
 - HTTPS example: `https:\/\/testcontent.mrss.eyevinn.technology/`
 - FILE example: `file:\/\/\/Users/sebastianljungman/Dropbox/Mac/Downloads/testContent.xml`
 

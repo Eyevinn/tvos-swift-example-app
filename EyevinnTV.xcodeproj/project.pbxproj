@@ -127,11 +127,11 @@
 			isa = PBXGroup;
 			children = (
 				03D9DD3128339B0100B964BF /* README.md */,
-				03489E29282A41EF0016E6B6 /* Scripts */,
 				035EBBA128253D0200C7D071 /* .gitignore */,
 				035EBB9F2825119300C7D071 /* Config.xcconfig */,
 				03350A9128351B8500A049F8 /* liveContentCopy.xml */,
 				03350A9028351B8500A049F8 /* vodContentCopy.xml */,
+				03489E29282A41EF0016E6B6 /* Scripts */,
 				032CBA1D28291E61001F318D /* Test Content */,
 				0375B7C128211D8000C86A39 /* EyevinnTV */,
 				0375B7D228211D8100C86A39 /* EyevinnTVTests */,
@@ -353,6 +353,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		03489E2D282A58720016E6B6 /* Copy XML Script */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -361,7 +362,6 @@
 				"",
 			);
 			inputPaths = (
-				"$(SRCROOT)/Scripts/CopyXml.swift",
 				"",
 			);
 			name = "Copy XML Script";
@@ -372,7 +372,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nxcrun --sdk macosx swiftc -parse-as-library $SCRIPT_INPUT_FILE_0 -o CompiledScript\n./CompiledScript\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nxcrun --sdk macosx swiftc -parse-as-library Scripts/CopyXml.swift -o CompiledScript\n./CompiledScript\n";
 		};
 		4D2A85EA3001CC3278043729 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
