@@ -101,11 +101,13 @@ struct ContentView: View {
     }
     
     func loadData() {
-        [vodXml, liveXml].forEach {
-            let isLive = $0 == liveXml ? true : false
+        let xmlsIndexed = [vodXml, liveXml].enumerated()
+        
+        for (index, xml) in xmlsIndexed {
+            let isLive = index == 1 ? true : false
             
-            if $0.prefix(7) == "http://" || $0.prefix(8) == "https://" {
-                let url = NSURL(string: $0)
+            if xml.prefix(7) == "http://" || xml.prefix(8) == "https://" {
+                let url = NSURL(string: xml)
                 let task = URLSession.shared.dataTask(with: url! as URL) {(data, response, error) in
                     if data != nil {
                         let feed = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)! as String
@@ -114,7 +116,10 @@ struct ContentView: View {
                 }
                 task.resume()
             } else {
-                let filenameInBundle = Bundle.main.path(forResource: $0, ofType: "xml")
+                if xml == "" {
+                    continue
+                }
+                let filenameInBundle = Bundle.main.path(forResource: xml, ofType: "xml")
                 let data = NSData(contentsOfFile: filenameInBundle!)
                 
                 if data != nil {

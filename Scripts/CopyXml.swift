@@ -14,16 +14,17 @@ enum MyScript {
             print("SRCROOT is undefined")
             return
         }
+        let vodXml = (ProcessInfo.processInfo.environment["VOD_XML"]) != nil ? (ProcessInfo.processInfo.environment["VOD_XML"])!.replacingOccurrences(of: "\\", with: "") : nil
+        let liveXml = (ProcessInfo.processInfo.environment["LIVE_XML"]) != nil ? (ProcessInfo.processInfo.environment["LIVE_XML"])!.replacingOccurrences(of: "\\", with: "") : nil
+        let xmlsIndexed = [vodXml, liveXml].enumerated()
         
-        let vodXml = (ProcessInfo.processInfo.environment["VOD_XML"]!).replacingOccurrences(of: "\\", with: "")
-        let liveXml = (ProcessInfo.processInfo.environment["LIVE_XML"]!).replacingOccurrences(of: "\\", with: "")
-        
-        [vodXml, liveXml].forEach {
-            let isLive = $0 == liveXml ? true : false
-            if $0.prefix(7) == "file://" {
-                let localFilePath = String($0.suffix($0.count - 7))
+        for (index, xml) in xmlsIndexed {
+            let isLive = index == 1 ? true : false
+
+            if xml != nil, xml!.prefix(7) == "file://" {
+                let localFilePath = String(xml!.suffix(xml!.count - 7))
                 let data = NSData(contentsOfFile: localFilePath)
-                
+
                 if data != nil {
                     let filePath = projectDir + (isLive ? "/liveContentCopy.xml" : "/vodContentCopy.xml")
                     if (FileManager.default.createFile(atPath: filePath, contents: data! as Data, attributes: nil)) {

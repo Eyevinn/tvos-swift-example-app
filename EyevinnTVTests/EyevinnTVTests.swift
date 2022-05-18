@@ -5,8 +5,10 @@
 //  Created by Sebastian Ljungman on 2022-05-03.
 //
 
+// Boilerplate test code, no tests implemented
+
 import XCTest
-@testable import EyevinnTV
+//@testable import EyevinnTV
 
 class EyevinnTVTests: XCTestCase {
 

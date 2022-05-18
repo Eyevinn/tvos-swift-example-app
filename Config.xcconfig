@@ -8,7 +8,7 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-//The mRSS XML files can be specified as either URI:s or filenames within the project.
+//VOD_XML and LIVE_XML are keys to load the contents of mRSS XML files. The values can be specified as either URI:s or filenames within the project. If the value for a key is left empty, no videos will be loaded for that carousel.
 
 // URI:s can be specified as either HTTP, HTTPS or FILE URL:s. Remember to escape double slashes and replace spaces with %20
 // HTTPS example: https:\/\/testcontent.mrss.eyevinn.technology/
@@ -16,11 +16,12 @@
 // To use HTTP, add your domain to Exception Domains in your Info.plist.
 
 // When using a file URL, the content of the specified file will be copied at build time to the vodContentCopy and liveContentCopy XML files in the root folder of the project, which are then
-// bundled with the application. If these files are missing in the project, they will be created in the root folder, BUT you will need to drag them into the project navigator for Xcode to recognize them.
+// bundled with the application. If these files are missing in the project, they will be created in the root folder when entering file URL:s as values, BUT you will need to drag them into the project navigator for Xcode to recognize them.
+// These files MUST exist in the project for file URL:s to be used.
 
 // If using filenames within the project, use only the filenames. No .xml extension, and no relative paths. If the files exists anywhere in the project, they should be found with just the filenames.
 // Note that files need to be added to the Xcode project navigator - It is not enough to add them in the project folder.
 // Project filename example: vodTestContent
 
 VOD_XML = https:\/\/testcontent.mrss.eyevinn.technology/
-LIVE_XML = liveTestContent
+LIVE_XML = liveTestContent//https:\/\/testcontent.mrss.eyevinn.technology/
