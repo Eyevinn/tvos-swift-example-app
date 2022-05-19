@@ -12,4 +12,5 @@ class Item: Identifiable {
     var title = ""
     var id = ""
     var videoUrl = ""
+    var thumbnailUrl = ""
 }

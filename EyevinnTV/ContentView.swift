@@ -42,8 +42,20 @@ struct ContentView: View {
                                         currentVideoUrlObject.currentVideoTitle = item.title
                                         print(item.videoUrl) } label: {
                                             VStack {
-                                                Image(systemName: "play.tv")
-                                                    .font(.system(size: 100))
+                                                AsyncImage(url: URL(string: item.thumbnailUrl)) { phase in
+                                                    switch phase {
+                                                    case .success(let image):
+                                                        image.resizable()
+                                                            .aspectRatio(contentMode: .fit)
+                                                            .frame(maxWidth: 400, maxHeight: 180)
+                                                            .cornerRadius(30)
+                                                    default:
+                                                        Image(systemName: "play.tv")
+                                                            .font(.system(size: 150)
+                                                            )
+                                                    }
+                                                }
+                                                Spacer()
                                                 Text("\(item.title)")
                                                     .bold()
                                             }
@@ -64,8 +76,19 @@ struct ContentView: View {
                                         currentVideoUrlObject.currentVideoTitle = item.title
                                         print(item.videoUrl) } label: {
                                             VStack {
-                                                Image(systemName: "play.tv")
-                                                    .font(.system(size: 100))
+                                                AsyncImage(url: URL(string: item.thumbnailUrl)) { phase in
+                                                    switch phase {
+                                                    case .success(let image):
+                                                        image.resizable()
+                                                            .aspectRatio(contentMode: .fit)
+                                                            .frame(maxWidth: 400, maxHeight: 180)
+                                                    default:
+                                                        Image(systemName: "play.tv")
+                                                            .font(.system(size: 150)
+                                                            )
+                                                    }
+                                                }
+                                                Spacer()
                                                 Text("\(item.title)")
                                                     .bold()
                                             }
@@ -90,12 +113,24 @@ struct ContentView: View {
     func parseXML(feed: String, isLive: Bool) {
         let xml = SWXMLHash.parse(feed)
         
+        //For XML feed in correct format (see README)
         for elem in xml["feed"]["entry"].all
         {
             let item = Item()
             item.title = elem["title"].element!.text
             item.id = elem["id"].element!.text
             item.videoUrl = elem["link"].element!.text
+            isLive ? liveVideoItems.append(item) : videoItems.append(item)
+        }
+        
+        //For MRSS feed in correct format (see README)
+        for elem in xml["rss"]["channel"]["item"].all
+        {
+            let item = Item()
+            item.title = elem["title"].element!.text
+            item.id = elem["guid"].element!.text
+            item.videoUrl = (elem["media:content"].element?.attribute(by: "url")!.text)!
+            item.thumbnailUrl = (elem["media:content"]["media:thumbnail"].element?.attribute(by: "url")!.text)!
             isLive ? liveVideoItems.append(item) : videoItems.append(item)
         }
     }

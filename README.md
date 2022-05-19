@@ -1,9 +1,39 @@
 # Eyevinn tvOS Example App
-The Eyevinn tvOS Example App is a simple Apple TV app that loads two mRSS feeds, displays their contents for selection, and plays back the linked HLS manifest of the selected entry. The mRSS feeds may be either remote files loaded during runtime, or local files that are bundled at buildtime.
+The Eyevinn tvOS Example App is a simple Apple TV app that loads two XML files/MRSS feeds, displays their contents for selection, and plays back the linked HLS manifest of the selected entry. The XML files/MRSS feeds may be either remote files loaded during runtime, or local files that are bundled at buildtime.
 
 ## How to use
-### Specifying mRSS feeds
-Select which mRSS feeds to use by setting the values for keys `VOD_XML` and `LIVE_XML` in the `Config.xcconfig` configuration file. The mRSS XML feeds can be specified as either URI:s or filenames within the project. If the value for a key is left empty, no videos will be loaded for that carousel.
+### XML/MRSS format
+For the content to be loaded correctly, the input must be in the allowed formats (see the `Test Content` folder for examples) 
+
+It can either be an XML file with the following structure:
+```
+<feed>
+    <entry>
+        title>{Video title}</title>
+        <id>{Unique video ID}</id>
+        <link>{HLS manifest URL}</link>
+    </entry>
+</feed>
+```
+
+Or an XML MRSS feed with the following structure:
+```
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+   <channel>
+      <item>
+         <title>{Video title}</title>
+         <guid isPermaLink="false">{Unique video ID}</guid>
+         <media:content url="{HLS manfiest URL}">
+            <media:thumbnail url="{Thumbnail image URL}" />
+         </media:content>
+      </item>
+   </channel>
+</rss>
+```
+The `media:thumbnail` element must exist in each item element in the MRSS feed, but if you wish not to provide a thumbnail image, you can supply an empty string as the url.
+
+### Specifying XML files/MRSS feeds
+Select which XML files to use by setting the values for keys `VOD_XML` and `LIVE_XML` in the `Config.xcconfig` configuration file. The XML files can be specified as either URI:s or filenames within the project. If the value for a key is left empty, no videos will be loaded for that carousel.
 
 URI:s can be specified as either HTTP, HTTPS or FILE URL:s. Remember to **escape double slashes**. To use HTTP, add your domain to Exception Domains in your Info.plist.
 - HTTPS example: `https:\/\/testcontent.mrss.eyevinn.technology/`

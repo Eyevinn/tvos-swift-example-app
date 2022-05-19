@@ -1,66 +1,153 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>testcontent.mrss.eyevinn.technology/index.mrss</id>
-    <title>Feed for Test-Content</title>
-    <updated>2022-02-22T20:50:52.595Z</updated>
-    <entry>
-        <title>stswe19-industry-group-low-latency-hls</title>
-        <id>842f1c9f-a3ec-413e-9bec-d7bb967391df</id>
-        <link>https://lab.cdn.eyevinn.technology/stswe19-industry-group-low-latency-hls.mp4/manifest.m3u8</link>
-    </entry>
-    <entry>
-        <title>stswe19-global-but-local-ott-platform</title>
-        <id>4a7d2004-4327-4eee-abb6-f69d8c794ac4</id>
-        <link>https://lab.cdn.eyevinn.technology/stswe19-global-but-local-ott-platform.mp4/manifest.m3u8</link>
-    </entry>
-    <entry>
-        <title>stswe19-serverless-media-processing-at-netflix</title>
-        <id>3993f37c-ecb3-4d44-86f1-5976bfe13276</id>
-        <link>https://lab.cdn.eyevinn.technology/stswe19-serverless-media-processing-at-netflix.mp4/manifest.m3u8</link>
-    </entry>
-    <entry>
-        <title>NO_TIME_TO_DIE_short_Trailer_2021</title>
-        <id>5050630b-b599-4e66-8033-f9f6139a7284</id>
-        <link>https://lab.cdn.eyevinn.technology/NO_TIME_TO_DIE_short_Trailer_2021.mp4/manifest.m3u8</link>
-    </entry>
-    <entry>
-        <title>THE_GRAND_BUDAPEST_HOTEL_Trailer_2014</title>
-        <id>21053ee7-b289-4210-869e-43f355357332</id>
-        <link>https://lab.cdn.eyevinn.technology/THE_GRAND_BUDAPEST_HOTEL_Trailer_2014.mp4/manifest.m3u8</link>
-    </entry>
-    <entry>
-        <title>stswe19-three-roads-to-jerusalem</title>
-        <id>e62ae11e-eee0-4372-812d-90730241831b</id>
-        <link>https://lab.cdn.eyevinn.technology/stswe19-three-roads-to-jerusalem.mp4/manifest.m3u8</link>
-    </entry>
-    <entry>
-        <title>wrc-jbi-arvija-finland-220126</title>
-        <id>8eaacb18-5196-4ec0-ad7a-00a9aafe5877</id>
-        <link>https://lab.cdn.eyevinn.technology/wrc-jbi-arvija-finland-220126.mov/manifest.m3u8</link>
-    </entry>
-    <entry>
-        <title>stswe19-challenge-to-preserver-creators-intent</title>
-        <id>81029cc5-af83-4858-9184-bce85b0764b4</id>
-        <link>https://lab.cdn.eyevinn.technology/stswe19-challenge-to-preserver-creators-intent.mp4/manifest.m3u8</link>
-    </entry>
-    <entry>
-        <title>BAAHUBALI_3_Trailer_2021</title>
-        <id>3413fb29-4aad-4a8d-80d8-b439809930f3</id>
-        <link>https://lab.cdn.eyevinn.technology/BAAHUBALI_3_Trailer_2021.mp4/manifest.m3u8</link>
-    </entry>
-    <entry>
-        <title>OWL_MVP_2021</title>
-        <id>98291d87-8681-4550-8969-5082cf2be001</id>
-        <link>https://lab.cdn.eyevinn.technology/OWL_MVP_2021.mp4/manifest.m3u8</link>
-    </entry>
-    <entry>
-        <title>wrc-jbi-sweden-220126-BP4uTVw_FV</title>
-        <id>243a124a-8151-4355-9981-98f5ed099f16</id>
-        <link>https://lab.cdn.eyevinn.technology/wrc-jbi-sweden-220126-BP4uTVw_FV.mp4/manifest.m3u8</link>
-    </entry>
-    <entry>
-        <title>f1-monaco-5l-jan8-5ULu9E6C_t.mov</title>
-        <id>acd60dcc-e0e5-4399-830d-d22dd23421a6</id>
-        <link>https://lab.cdn.eyevinn.technology/f1-monaco-5l-jan8-5ULu9E6C_t.mov/manifest.m3u8</link>
-    </entry>
-</feed>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+    <channel>
+        <title>VOD Example Streams</title>
+        <link>https://www.eyevinntechnology.se/</link>
+        <description>Contains VOD example streams</description>
+        <atom:link href="http://ENTER_FEED_URL_HERE_IF_UPLOADING.xml" rel="self" type="application/rss+xml" />
+        <item>
+            <title>stswe19-industry-group-low-latency-hls</title>
+            <description>A Streaming Tech Sweden interview on low latency streaming</description>
+            <guid isPermaLink="false">842f1c9f-a3ec-413e-9bec-d7bb967391df</guid>
+            <media:category>All</media:category>
+            <media:category>Streaming</media:category>
+            <media:content url="https://lab.cdn.eyevinn.technology/stswe19-industry-group-low-latency-hls.mp4/manifest.m3u8">
+                <media:title type="plain">stswe19-industry-group-low-latency-hls</media:title>
+                <media:description type="html">A Streaming Tech Sweden interview on low latency streaming</media:description>
+                <media:thumbnail url="https://picsum.photos/id/158/200/100.jpg" />
+            </media:content>
+        </item>
+        <item>
+            <title>stswe19-global-but-local-ott-platform</title>
+            <description>A Streaming Tech Sweden talk on OTT streaming</description>
+            <guid isPermaLink="false">4a7d2004-4327-4eee-abb6-f69d8c794ac4</guid>
+            <media:category>All</media:category>
+            <media:category>Streaming</media:category>
+            <media:content url="https://lab.cdn.eyevinn.technology/stswe19-global-but-local-ott-platform.mp4/manifest.m3u8">
+                <media:title type="plain">stswe19-global-but-local-ott-platform</media:title>
+                <media:description type="html">A Streaming Tech Sweden talk on OTT streaming</media:description>
+                <media:thumbnail url="https://picsum.photos/id/122/200/100.jpg" />
+            </media:content>
+        </item>
+        <item>
+            <title>stswe19-serverless-media-processing-at-netflix</title>
+            <description>A Streaming Tech Sweden talk on serverless media processing</description>
+            <guid isPermaLink="false">3993f37c-ecb3-4d44-86f1-5976bfe13276</guid>
+            <media:category>All</media:category>
+            <media:category>Streaming</media:category>
+            <media:content url="https://lab.cdn.eyevinn.technology/stswe19-serverless-media-processing-at-netflix.mp4/manifest.m3u8">
+                <media:title type="plain">stswe19-serverless-media-processing-at-netflix</media:title>
+                <media:description type="html">A Streaming Tech Sweden talk on serverless media processing</media:description>
+                <media:thumbnail url="https://picsum.photos/id/119/200/100.jpg" />
+            </media:content>
+        </item>
+        <item>
+            <title>NO_TIME_TO_DIE_short_Trailer_2021</title>
+            <description>James Bond movie trailer</description>
+            <guid isPermaLink="false">5050630b-b599-4e66-8033-f9f6139a7284</guid>
+            <media:category>All</media:category>
+            <media:category>Action</media:category>
+            <media:content url="https://lab.cdn.eyevinn.technology/NO_TIME_TO_DIE_short_Trailer_2021.mp4/manifest.m3u8">
+                <media:title type="plain">NO_TIME_TO_DIE_short_Trailer_2021</media:title>
+                <media:description type="html">James Bond movie trailer</media:description>
+                <media:thumbnail url="https://picsum.photos/id/22/200/100.jpg" />
+            </media:content>
+        </item>
+        <item>
+            <title>THE_GRAND_BUDAPEST_HOTEL_Trailer_2014</title>
+            <description>A comedic adventure</description>
+            <guid isPermaLink="false">21053ee7-b289-4210-869e-43f355357332</guid>
+            <media:category>All</media:category>
+            <media:category>Action</media:category>
+            <media:content url="https://lab.cdn.eyevinn.technology/THE_GRAND_BUDAPEST_HOTEL_Trailer_2014.mp4/manifest.m3u8">
+                <media:title type="plain">THE_GRAND_BUDAPEST_HOTEL_Trailer_2014</media:title>
+                <media:description type="html">A comedic adventure</media:description>
+                <media:thumbnail url="https://picsum.photos/id/193/200/100.jpg" />
+            </media:content>
+        </item>
+        <item>
+            <title>stswe19-three-roads-to-jerusalem</title>
+            <description>A Streaming Tech Sweden talk by Will Law on low latency streaming</description>
+            <guid isPermaLink="false">e62ae11e-eee0-4372-812d-90730241831b</guid>
+            <media:category>All</media:category>
+            <media:category>Streaming</media:category>
+            <media:content url="https://lab.cdn.eyevinn.technology/stswe19-three-roads-to-jerusalem.mp4/manifest.m3u8">
+                <media:title type="plain">stswe19-three-roads-to-jerusalem</media:title>
+                <media:description type="html">A Streaming Tech Sweden talk by Will Law on low latency streaming</media:description>
+                <media:thumbnail url="https://picsum.photos/id/219/200/100.jpg" />
+            </media:content>
+        </item>
+        <item>
+            <title>wrc-jbi-arvija-finland-220126</title>
+            <description>Virtual racing</description>
+            <guid isPermaLink="false">8eaacb18-5196-4ec0-ad7a-00a9aafe5877</guid>
+            <media:category>All</media:category>
+            <media:category>Racing</media:category>
+            <media:content url="https://lab.cdn.eyevinn.technology/wrc-jbi-arvija-finland-220126.mov/manifest.m3u8">
+                <media:title type="plain">wrc-jbi-arvija-finland-220126</media:title>
+                <media:description type="html">Virtual racing</media:description>
+                <media:thumbnail url="https://picsum.photos/id/352/200/100.jpg" />
+            </media:content>
+        </item>
+        <item>
+            <title>stswe19-challenge-to-preserver-creators-intent</title>
+            <description>A Streaming Tech Sweden interview about preserving creators' intent</description>
+            <guid isPermaLink="false">81029cc5-af83-4858-9184-bce85b0764b4</guid>
+            <media:category>All</media:category>
+            <media:category>Streaming</media:category>
+            <media:content url="https://lab.cdn.eyevinn.technology/stswe19-challenge-to-preserver-creators-intent.mp4/manifest.m3u8">
+                <media:title type="plain">stswe19-challenge-to-preserver-creators-intent</media:title>
+                <media:description type="html">A Streaming Tech Sweden interview about preserving creators' intent</media:description>
+                <media:thumbnail url="https://picsum.photos/id/373/200/100.jpg" />
+            </media:content>
+        </item>
+        <item>
+            <title>BAAHUBALI_3_Trailer_2021</title>
+            <description>Indian action movie trailer</description>
+            <guid isPermaLink="false">3413fb29-4aad-4a8d-80d8-b439809930f3</guid>
+            <media:category>All</media:category>
+            <media:category>Action</media:category>
+            <media:content url="https://lab.cdn.eyevinn.technology/BAAHUBALI_3_Trailer_2021.mp4/manifest.m3u8">
+                <media:title type="plain">BAAHUBALI_3_Trailer_2021</media:title>
+                <media:description type="html">Indian action movie trailer</media:description>
+                <media:thumbnail url="https://picsum.photos/id/415/200/100.jpg" />
+            </media:content>
+        </item>
+        <item>
+            <title>OWL_MVP_2021</title>
+            <description>Overwatch League hype</description>
+            <guid isPermaLink="false">98291d87-8681-4550-8969-5082cf2be001</guid>
+            <media:category>All</media:category>
+            <media:category>Esports</media:category>
+            <media:content url="https://lab.cdn.eyevinn.technology/OWL_MVP_2021.mp4/manifest.m3u8">
+                <media:title type="plain">OWL_MVP_2021</media:title>
+                <media:description type="html">Overwatch League hype</media:description>
+                <media:thumbnail url="https://picsum.photos/id/366/200/100.jpg" />
+            </media:content>
+        </item>
+        <item>
+            <title>wrc-jbi-sweden-220126-BP4uTVw_FV</title>
+            <description>Virtual racing</description>
+            <guid isPermaLink="false">243a124a-8151-4355-9981-98f5ed099f16</guid>
+            <media:category>All</media:category>
+            <media:category>Streaming</media:category>
+            <media:content url="https://lab.cdn.eyevinn.technology/wrc-jbi-sweden-220126-BP4uTVw_FV.mp4/manifest.m3u8">
+                <media:title type="plain">wrc-jbi-sweden-220126-BP4uTVw_FV</media:title>
+                <media:description type="html">Virtual racing</media:description>
+                <media:thumbnail url="https://picsum.photos/id/1071/200/100.jpg" />
+            </media:content>
+        </item>
+        <item>
+            <title>f1-monaco-5l-jan8-5ULu9E6C_t.mov</title>
+            <description>F1 racing hype</description>
+            <guid isPermaLink="false">acd60dcc-e0e5-4399-830d-d22dd23421a6</guid>
+            <media:category>All</media:category>
+            <media:category>Racing</media:category>
+            <media:content url="https://lab.cdn.eyevinn.technology/f1-monaco-5l-jan8-5ULu9E6C_t.mov/manifest.m3u8">
+                <media:title type="plain">f1-monaco-5l-jan8-5ULu9E6C_t.mov</media:title>
+                <media:description type="html">F1 racing hype</media:description>
+                <media:thumbnail url="https://picsum.photos/id/111/200/100.jpg" />
+            </media:content>
+        </item>
+    </channel>
+</rss>

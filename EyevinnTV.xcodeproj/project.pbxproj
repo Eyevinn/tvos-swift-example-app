@@ -20,6 +20,7 @@
 		0375B7E028211D8100C86A39 /* EyevinnTVUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0375B7DF28211D8100C86A39 /* EyevinnTVUITestsLaunchTests.swift */; };
 		0375B7ED282128FC00C86A39 /* VideoItemObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0375B7EC282128FC00C86A39 /* VideoItemObject.swift */; };
 		0375B7F1282157F600C86A39 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0375B7F0282157F600C86A39 /* VideoView.swift */; };
+		0384FE0D28366AC2002B7E71 /* liveTestContentMrss.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0384FE0C28366AC2002B7E71 /* liveTestContentMrss.xml */; };
 		03B0A69828240801004CE0DC /* vodTestContent.xml in Resources */ = {isa = PBXBuildFile; fileRef = 03B0A69728240801004CE0DC /* vodTestContent.xml */; };
 		D1ECF192ADCB3DC84AE92761 /* Pods_EyevinnTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC281232F09A36AC9C322B37 /* Pods_EyevinnTV.framework */; };
 		DCDFBD4D6D81CDE87996246C /* Pods_EyevinnTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460414F4891D1A1A837FB2CE /* Pods_EyevinnTVTests.framework */; };
@@ -64,6 +65,7 @@
 		0375B7DF28211D8100C86A39 /* EyevinnTVUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyevinnTVUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0375B7EC282128FC00C86A39 /* VideoItemObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoItemObject.swift; sourceTree = "<group>"; };
 		0375B7F0282157F600C86A39 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		0384FE0C28366AC2002B7E71 /* liveTestContentMrss.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = liveTestContentMrss.xml; sourceTree = "<group>"; };
 		03B0A69728240801004CE0DC /* vodTestContent.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vodTestContent.xml; sourceTree = "<group>"; };
 		03D9DD3128339B0100B964BF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		12EDCD5564ABFC0A18A6F89E /* Pods-EyevinnTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyevinnTVTests.release.xcconfig"; path = "Target Support Files/Pods-EyevinnTVTests/Pods-EyevinnTVTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			children = (
 				03B0A69728240801004CE0DC /* vodTestContent.xml */,
 				032CBA1E282933B4001F318D /* liveTestContent.xml */,
+				0384FE0C28366AC2002B7E71 /* liveTestContentMrss.xml */,
 				03350A842835005F00A049F8 /* vodTestContentMrss.xml */,
 			);
 			path = "Test Content";
@@ -326,6 +329,7 @@
 			files = (
 				0375B7CA28211D8100C86A39 /* Preview Assets.xcassets in Resources */,
 				0375B7C728211D8100C86A39 /* Assets.xcassets in Resources */,
+				0384FE0D28366AC2002B7E71 /* liveTestContentMrss.xml in Resources */,
 				03350A9228351B8500A049F8 /* vodContentCopy.xml in Resources */,
 				03B0A69828240801004CE0DC /* vodTestContent.xml in Resources */,
 				03350A852835005F00A049F8 /* vodTestContentMrss.xml in Resources */,

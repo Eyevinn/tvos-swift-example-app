@@ -8,7 +8,7 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-//VOD_XML and LIVE_XML are keys to load the contents of mRSS XML files. The values can be specified as either URI:s or filenames within the project. If the value for a key is left empty, no videos will be loaded for that carousel.
+//VOD_XML and LIVE_XML are keys to load the contents of XML/MRSS files. The values can be specified as either URI:s or filenames within the project. If the value for a key is left empty, no videos will be loaded for that carousel.
 
 // URI:s can be specified as either HTTP, HTTPS or FILE URL:s. Remember to escape double slashes!
 // HTTPS example: https:\/\/testcontent.mrss.eyevinn.technology/
@@ -23,5 +23,5 @@
 // Note that files need to be added to the Xcode project navigator - It is not enough to add them in the project folder.
 // Project filename example: vodTestContent
 
-VOD_XML = https:\/\/testcontent.mrss.eyevinn.technology/
-LIVE_XML = liveTestContent
+VOD_XML = vodTestContentMrss
+LIVE_XML = liveTestContentMrss
