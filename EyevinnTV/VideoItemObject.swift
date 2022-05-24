@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import AVKit
 
 class Item: Identifiable {
     var title = ""

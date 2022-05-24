@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		032CBA1F282933B4001F318D /* liveTestContent.xml in Resources */ = {isa = PBXBuildFile; fileRef = 032CBA1E282933B4001F318D /* liveTestContent.xml */; };
 		03350A852835005F00A049F8 /* vodTestContentMrss.xml in Resources */ = {isa = PBXBuildFile; fileRef = 03350A842835005F00A049F8 /* vodTestContentMrss.xml */; };
-		03350A9228351B8500A049F8 /* vodContentCopy.xml in Resources */ = {isa = PBXBuildFile; fileRef = 03350A9028351B8500A049F8 /* vodContentCopy.xml */; };
-		03350A9328351B8500A049F8 /* liveContentCopy.xml in Resources */ = {isa = PBXBuildFile; fileRef = 03350A9128351B8500A049F8 /* liveContentCopy.xml */; };
+		0365D6F5283B81BD00B1DBBA /* liveContentCopy.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0365D6F4283B816100B1DBBA /* liveContentCopy.xml */; };
+		0365D6F6283B81BD00B1DBBA /* vodContentCopy.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0365D6F3283B816000B1DBBA /* vodContentCopy.xml */; };
 		0375B7C328211D8000C86A39 /* EyevinnTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0375B7C228211D8000C86A39 /* EyevinnTVApp.swift */; };
 		0375B7C528211D8000C86A39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0375B7C428211D8000C86A39 /* ContentView.swift */; };
 		0375B7C728211D8100C86A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0375B7C628211D8100C86A39 /* Assets.xcassets */; };
@@ -47,12 +47,12 @@
 /* Begin PBXFileReference section */
 		032CBA1E282933B4001F318D /* liveTestContent.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = liveTestContent.xml; sourceTree = "<group>"; };
 		03350A842835005F00A049F8 /* vodTestContentMrss.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = vodTestContentMrss.xml; sourceTree = "<group>"; };
-		03350A9028351B8500A049F8 /* vodContentCopy.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vodContentCopy.xml; sourceTree = "<group>"; };
-		03350A9128351B8500A049F8 /* liveContentCopy.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = liveContentCopy.xml; sourceTree = "<group>"; };
 		03489E2A282A420D0016E6B6 /* CopyXml.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyXml.swift; sourceTree = "<group>"; };
 		035EBB9F2825119300C7D071 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		035EBBA128253D0200C7D071 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		035EBBA22825420200C7D071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0365D6F3283B816000B1DBBA /* vodContentCopy.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = vodContentCopy.xml; sourceTree = "<group>"; };
+		0365D6F4283B816100B1DBBA /* liveContentCopy.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = liveContentCopy.xml; sourceTree = "<group>"; };
 		0375B7BF28211D8000C86A39 /* EyevinnTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyevinnTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0375B7C228211D8000C86A39 /* EyevinnTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyevinnTVApp.swift; sourceTree = "<group>"; };
 		0375B7C428211D8000C86A39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,8 +110,8 @@
 		032CBA1D28291E61001F318D /* Test Content */ = {
 			isa = PBXGroup;
 			children = (
-				03B0A69728240801004CE0DC /* vodTestContent.xml */,
 				032CBA1E282933B4001F318D /* liveTestContent.xml */,
+				03B0A69728240801004CE0DC /* vodTestContent.xml */,
 				0384FE0C28366AC2002B7E71 /* liveTestContentMrss.xml */,
 				03350A842835005F00A049F8 /* vodTestContentMrss.xml */,
 			);
@@ -132,8 +132,8 @@
 				03D9DD3128339B0100B964BF /* README.md */,
 				035EBBA128253D0200C7D071 /* .gitignore */,
 				035EBB9F2825119300C7D071 /* Config.xcconfig */,
-				03350A9128351B8500A049F8 /* liveContentCopy.xml */,
-				03350A9028351B8500A049F8 /* vodContentCopy.xml */,
+				0365D6F4283B816100B1DBBA /* liveContentCopy.xml */,
+				0365D6F3283B816000B1DBBA /* vodContentCopy.xml */,
 				03489E29282A41EF0016E6B6 /* Scripts */,
 				032CBA1D28291E61001F318D /* Test Content */,
 				0375B7C128211D8000C86A39 /* EyevinnTV */,
@@ -327,14 +327,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0365D6F5283B81BD00B1DBBA /* liveContentCopy.xml in Resources */,
+				0365D6F6283B81BD00B1DBBA /* vodContentCopy.xml in Resources */,
 				0375B7CA28211D8100C86A39 /* Preview Assets.xcassets in Resources */,
 				0375B7C728211D8100C86A39 /* Assets.xcassets in Resources */,
 				0384FE0D28366AC2002B7E71 /* liveTestContentMrss.xml in Resources */,
-				03350A9228351B8500A049F8 /* vodContentCopy.xml in Resources */,
 				03B0A69828240801004CE0DC /* vodTestContent.xml in Resources */,
 				03350A852835005F00A049F8 /* vodTestContentMrss.xml in Resources */,
 				032CBA1F282933B4001F318D /* liveTestContent.xml in Resources */,
-				03350A9328351B8500A049F8 /* liveContentCopy.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

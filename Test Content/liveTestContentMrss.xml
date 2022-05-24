@@ -19,8 +19,6 @@
       </item>
       <item>
          <title>HLS SSAI</title>
-         <pubDate>Thu, 12 Oct 2017 00:00:00 -0700</pubDate>
-         <link>http://sample-firetv-web-app.s3-website-us-west-2.amazonaws.com/spectators/</link>
          <description>A live stream of virtual racing action, with stitched in ads from Eyevinn's SSAI server</description>
          <guid isPermaLink="false">https://edfaeed9c7154a20828a30a26878ade0.mediatailor.eu-west-1.amazonaws.com/v1/master/1b8a07d9a44fe90e52d5698704c72270d177ae74/AdTest/master.m3u8</guid>
          <media:category>All</media:category>

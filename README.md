@@ -12,6 +12,7 @@ It can either be an XML file with the following structure:
         title>{Video title}</title>
         <id>{Unique video ID}</id>
         <link>{HLS manifest URL}</link>
+        <image>{Thumbnail image URL}</image>
     </entry>
 </feed>
 ```
@@ -30,16 +31,16 @@ Or an XML MRSS feed with the following structure:
    </channel>
 </rss>
 ```
-The `media:thumbnail` element must exist in each item element in the MRSS feed, but if you wish not to provide a thumbnail image, you can supply an empty string as the url.
+The `image` and `media:thumbnail` elements are **optional**.
 
 ### Specifying XML files/MRSS feeds
 Select which XML files to use by setting the values for keys `VOD_XML` and `LIVE_XML` in the `Config.xcconfig` configuration file. The XML files can be specified as either URI:s or filenames within the project. If the value for a key is left empty, no videos will be loaded for that carousel.
 
-URI:s can be specified as either HTTP, HTTPS or FILE URL:s. Remember to **escape double slashes**. To use HTTP, add your domain to Exception Domains in your Info.plist.
+URI:s can be specified as either HTTP, HTTPS or FILE URL:s. Remember to **escape double slashes**, and **replace spaces with %20**. To use HTTP, add your domain to Exception Domains in your Info.plist.
 - HTTPS example: `https:\/\/testcontent.mrss.eyevinn.technology/`
 - FILE example: `file:\/\/\/Users/sebastianljungman/Dropbox/Mac/Downloads/testContent.xml`
 
-When using a file URL, the content of the specified file will be copied at build time to the `vodContentCopy` and `liveContentCopy` XML files in the **root folder** of the project, which are then bundled with the application. If these files are missing in the project, they will be created in the root folder when entering file URL:s as values, **but** you will need to drag them into the project navigator for Xcode to recognize them. These files **MUST exist in the project for file URL:s to be used**.
+When using a file URL, the content of the specified file will be copied at build time to the `vodContentCopy` and `liveContentCopy` XML files in the **root folder** of the project, which are then bundled with the application. If these files are missing in the project, they will be created in the root folder if specifying file URL:s, **but** you will need to drag them into the project navigator for Xcode to recognize them. These files **MUST exist in the project for file URL:s to be used**.
 
 If using filenames within the project, use only the filenames. No .xml extension, and no relative paths. If the files exists anywhere in the project, they should be found with just the filenames.
 Note that files need to be added to the Xcode project navigator - It is not enough to add them in the project folder.

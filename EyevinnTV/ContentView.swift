@@ -120,6 +120,7 @@ struct ContentView: View {
             item.title = elem["title"].element!.text
             item.id = elem["id"].element!.text
             item.videoUrl = elem["link"].element!.text
+            item.thumbnailUrl = elem["image"].element?.text != nil ? elem["image"].element!.text : ""
             isLive ? liveVideoItems.append(item) : videoItems.append(item)
         }
         
@@ -130,7 +131,7 @@ struct ContentView: View {
             item.title = elem["title"].element!.text
             item.id = elem["guid"].element!.text
             item.videoUrl = (elem["media:content"].element?.attribute(by: "url")!.text)!
-            item.thumbnailUrl = (elem["media:content"]["media:thumbnail"].element?.attribute(by: "url")!.text)!
+            item.thumbnailUrl = (elem["media:content"]["media:thumbnail"].element?.attribute(by: "url")!.text) != nil ? (elem["media:content"]["media:thumbnail"].element?.attribute(by: "url")!.text)! : ""
             isLive ? liveVideoItems.append(item) : videoItems.append(item)
         }
     }
@@ -142,7 +143,7 @@ struct ContentView: View {
             let isLive = index == 1 ? true : false
             
             if xml.prefix(7) == "http://" || xml.prefix(8) == "https://" {
-                let url = NSURL(string: xml)
+                let url = URL(string: xml)
                 let task = URLSession.shared.dataTask(with: url! as URL) {(data, response, error) in
                     if data != nil {
                         let feed = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)! as String
