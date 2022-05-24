@@ -142,7 +142,9 @@ struct ContentView: View {
         for (index, xml) in xmlsIndexed {
             let isLive = index == 1 ? true : false
             
-            if xml.prefix(7) == "http://" || xml.prefix(8) == "https://" {
+            if xml == "" {
+                continue
+            } else if xml.prefix(7) == "http://" || xml.prefix(8) == "https://" {
                 let url = URL(string: xml)
                 let task = URLSession.shared.dataTask(with: url! as URL) {(data, response, error) in
                     if data != nil {
@@ -152,9 +154,6 @@ struct ContentView: View {
                 }
                 task.resume()
             } else {
-                if xml == "" {
-                    continue
-                }
                 let filenameInBundle = Bundle.main.path(forResource: xml, ofType: "xml")
                 let data = NSData(contentsOfFile: filenameInBundle!)
                 
