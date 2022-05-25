@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Item: Identifiable {
+class VideoItem: Identifiable {
     var title = ""
     var id = ""
     var videoUrl = ""

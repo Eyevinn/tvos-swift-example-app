@@ -14,8 +14,8 @@ class videoUrlObject: ObservableObject {
 }
 
 struct ContentView: View {
-    @State var videoItems = [Item]()
-    @State var liveVideoItems = [Item]()
+    @State var videoItems = [VideoItem]()
+    @State var liveVideoItems = [VideoItem]()
     @StateObject var currentVideoUrlObject = videoUrlObject()
     
     private var vodXml: String = ((Bundle.main.infoDictionary?["VOD_XML"] as! String).replacingOccurrences(of: "\\", with: "").prefix(7) == "file://") ?
@@ -32,17 +32,16 @@ struct ContentView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(height: 200, alignment: .center)
-                    
                     ScrollView(.horizontal) {
                         HStack {
-                            ForEach(videoItems) { item in
+                            ForEach(videoItems) { videoItem in
                                 VStack {
                                     Button {
-                                        currentVideoUrlObject.currentVideoUrl = item.videoUrl
-                                        currentVideoUrlObject.currentVideoTitle = item.title
-                                        print(item.videoUrl) } label: {
+                                        currentVideoUrlObject.currentVideoUrl = videoItem.videoUrl
+                                        currentVideoUrlObject.currentVideoTitle = videoItem.title
+                                        print(videoItem.videoUrl) } label: {
                                             VStack {
-                                                AsyncImage(url: URL(string: item.thumbnailUrl)) { phase in
+                                                AsyncImage(url: URL(string: videoItem.thumbnailUrl)) { phase in
                                                     switch phase {
                                                     case .success(let image):
                                                         image.resizable()
@@ -56,7 +55,7 @@ struct ContentView: View {
                                                     }
                                                 }
                                                 Spacer()
-                                                Text("\(item.title)")
+                                                Text("\(videoItem.title)")
                                                     .bold()
                                             }
                                             .frame(width: 550, height: 250)
@@ -69,14 +68,14 @@ struct ContentView: View {
                     
                     ScrollView(.horizontal) {
                         HStack {
-                            ForEach(liveVideoItems) { item in
+                            ForEach(liveVideoItems) { videoItem in
                                 VStack {
                                     Button {
-                                        currentVideoUrlObject.currentVideoUrl = item.videoUrl
-                                        currentVideoUrlObject.currentVideoTitle = item.title
-                                        print(item.videoUrl) } label: {
+                                        currentVideoUrlObject.currentVideoUrl = videoItem.videoUrl
+                                        currentVideoUrlObject.currentVideoTitle = videoItem.title
+                                        print(videoItem.videoUrl) } label: {
                                             VStack {
-                                                AsyncImage(url: URL(string: item.thumbnailUrl)) { phase in
+                                                AsyncImage(url: URL(string: videoItem.thumbnailUrl)) { phase in
                                                     switch phase {
                                                     case .success(let image):
                                                         image.resizable()
@@ -89,7 +88,7 @@ struct ContentView: View {
                                                     }
                                                 }
                                                 Spacer()
-                                                Text("\(item.title)")
+                                                Text("\(videoItem.title)")
                                                     .bold()
                                             }
                                             .frame(width: 550, height: 250)
@@ -116,23 +115,23 @@ struct ContentView: View {
         //For XML feed in correct format (see README)
         for elem in xml["feed"]["entry"].all
         {
-            let item = Item()
-            item.title = elem["title"].element!.text
-            item.id = elem["id"].element!.text
-            item.videoUrl = elem["link"].element!.text
-            item.thumbnailUrl = elem["image"].element?.text != nil ? elem["image"].element!.text : ""
-            isLive ? liveVideoItems.append(item) : videoItems.append(item)
+            let videoItem = VideoItem()
+            videoItem.title = elem["title"].element!.text
+            videoItem.id = elem["id"].element!.text
+            videoItem.videoUrl = elem["link"].element!.text
+            videoItem.thumbnailUrl = elem["image"].element?.text != nil ? elem["image"].element!.text : ""
+            isLive ? liveVideoItems.append(videoItem) : videoItems.append(videoItem)
         }
         
         //For MRSS feed in correct format (see README)
         for elem in xml["rss"]["channel"]["item"].all
         {
-            let item = Item()
-            item.title = elem["title"].element!.text
-            item.id = elem["guid"].element!.text
-            item.videoUrl = (elem["media:content"].element?.attribute(by: "url")!.text)!
-            item.thumbnailUrl = (elem["media:content"]["media:thumbnail"].element?.attribute(by: "url")!.text) != nil ? (elem["media:content"]["media:thumbnail"].element?.attribute(by: "url")!.text)! : ""
-            isLive ? liveVideoItems.append(item) : videoItems.append(item)
+            let videoItem = VideoItem()
+            videoItem.title = elem["title"].element!.text
+            videoItem.id = elem["guid"].element!.text
+            videoItem.videoUrl = (elem["media:content"].element?.attribute(by: "url")!.text)!
+            videoItem.thumbnailUrl = (elem["media:content"]["media:thumbnail"].element?.attribute(by: "url")!.text) != nil ? (elem["media:content"]["media:thumbnail"].element?.attribute(by: "url")!.text)! : ""
+            isLive ? liveVideoItems.append(videoItem) : videoItems.append(videoItem)
         }
     }
     
